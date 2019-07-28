@@ -135,6 +135,7 @@ Page({
   wxSearchFn: function (e) {
     var that = this
     WxSearch.wxSearchAddHisKey(that);
+    //添加
 
   },
   wxSearchInput: function (e) {

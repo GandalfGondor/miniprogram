@@ -19,7 +19,9 @@
   <!-- 上传图片 -->
   <view>
    <button class="uploadphoto-btn" bindtap="doUpload">
-    <image class='uploadphoto-btn' src='../../images/camera.png'></image>
+   <view class="uploadphoto-image">
+    <image class='uploadphoto-image' src='../../images/camera3.png'></image>
+    </view>
     </button>
   </view>
     <view class="uploader-container" wx:if="{{imgUrl}}">

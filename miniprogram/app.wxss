@@ -50,16 +50,29 @@ page {
   background-color: white;
 }
 
-.uploadphoto-btn {
-  position:flex;
-  top: 250rpx;
+.uploadphoto-image {
+  position:relative;
+  top: 15rpx;
+  left: 2rpx;
   margin-top:0rpx;
-  width: 230rpx;
-  height: 140rpx;
+  width: 130rpx;
+  height: 120rpx;
   display: flex;
   border-radius: 0%;
   background-size: cover;
-  background-color: rgb(255,255, 255);
+  background-color: rgb(231, 231, 231);
+}
+
+.uploadphoto-btn {
+  position:flex;
+  top: 200rpx;
+  margin-top:0rpx;
+  width: 200rpx;
+  height: 200rpx;
+  display: flex;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: rgb(231, 231, 231);
 }
 
 .userinfo-avatar:after {
