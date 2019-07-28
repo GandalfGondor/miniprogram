@@ -1,0 +1,110 @@
+.wxSearch{
+  position:absolute;
+  margin-top:450rpx;
+  left: 0px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.wxSearchInner{
+  position:absolute;
+  left: 20rpx;
+  text-align: center;
+  text-shadow: gray;
+  text-transform: uppercase;
+  width: 700rpx;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+}
+.wxSearch-section{
+  position:relative;
+  top:250rpx;
+  background-color: rgb(255, 255, 255);
+  height: 102rpx;
+  width: 700rpx; 
+}
+.wxSearch-pancel{
+  display: flex;
+  flex-direction: row;
+}
+.wxSearch-input{
+  flex: 8; 
+  background-color: rgb(231, 228, 228);
+  width: 400rpx;
+  height: 100rpx;
+  padding-left: 50rpx;
+  border:3rpx solid rgb(206, 206, 206);
+}
+.wxSearch-button{
+  flex: 1;
+  border: none !important;
+  color: cornflowerblue !important;
+  margin-top: 25rpx;
+}
+
+.wxSearchTitle{
+  display: block;
+  padding: 10rpx 5rpx 5rpx 10rpx;
+  font-size: 35rpx;
+  text-align: center;
+  font-weight: bolder; 
+}
+
+
+.wxSearchMindKeyItem{
+  padding: 10rpx 5rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  font-size: 14rpx;
+  color: cornflowerblue;
+}
+
+.wxSearchKeyList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wxSearchKeyItem{
+  flex: 0 0 20%;
+  font-size: 14rpx;
+  text-align: center;
+  border: 1rpx solid rgb(226, 226, 226);
+  margin: 5rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 5rpx;
+  font-size: 25rpx;
+  font-stretch: wider;
+
+  font-size-adjust: 0.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wxSearchHistoryItem{
+  padding: 10rpx 5rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+}
+.wxSearchHistoryItemText{
+  flex: 8;
+  font-size: 14rpx;
+}
+.wxSearchHistoryItemDel{
+  flex: 1;
+  font-size: 12rpx;
+  text-align: center;
+  padding: 3rpx 5rpx;
+  border: 1rpx solid #eee;
+  border-radius: 5rpx;
+}
+.wxSearchHistoryEmpty{
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 23rpx;
+}
+.wxSearchDeleteAllBtn{
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 12rpx;
+}
