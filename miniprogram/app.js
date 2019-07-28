@@ -12,6 +12,8 @@ App({
     }
 
     this.globalData = {
+      rubbish_table: null, // 解析远程json文件并生成的json对象
+      tagsTobeCate: null // 传递给查找逻辑的标签列表，使用全局变量形式传递
     }
   }
 })

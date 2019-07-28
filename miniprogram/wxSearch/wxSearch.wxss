@@ -80,16 +80,17 @@
 } 
 .wxSearchHistoryItem{ 
   padding: 10rpx 5rpx; 
+  font-size: 25rpx; 
   border-bottom: 1rpx solid #eee; 
   display: flex; 
 } 
 .wxSearchHistoryItemText{ 
   flex: 8; 
-  font-size: 14rpx; 
+  font-size: 20rpx; 
 } 
 .wxSearchHistoryItemDel{ 
   flex: 1; 
-  font-size: 12rpx; 
+  font-size: 18rpx; 
   text-align: center; 
   padding: 3rpx 5rpx; 
   border: 1rpx solid #eee; 
@@ -102,8 +103,13 @@
   font-size: 23rpx; 
 } 
 .wxSearchDeleteAllBtn{ 
+  position:relative;
+  top: 5rpx;
   height: 50rpx; 
+  left:230rpx;
   line-height: 50rpx; 
-  text-align: center; 
-  font-size: 12rpx; 
+  width:220rpx;
+  text-align: center;
+  border: 1rpx solid #eee;  
+  font-size: 25rpx; 
 }

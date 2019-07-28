@@ -32,6 +32,28 @@ Page({
     console.group('文件存储文档')
     console.log('https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/storage.html')
     console.groupEnd()
+  
+
+    var tagsTobeCate = getApp().globalData.tagsTobeCate;
+    var rubbish_table = getApp().globalData.rubbish_table;
+    for(var i = 0; i<tagsTobeCate.length; i++) {
+    var found = 0;
+    var msg = "";
+    for (var item in rubbish_table) {
+      if (item == tagsTobeCate[i]) {
+        var category = rubbish_table[item];
+        msg = tagsTobeCate[i] + "是" + category[0].tag;
+        found = 1;
+        break;
+      }
+    }
+    if (!found)
+      msg = tagsTobeCate[i] + "不在垃圾分类仓库中";
+    var key = "itemAndCategories[" + i + "]";
+    this.setData({
+      key: msg
+    })
+  }
   },
 
   analyzeImg: function (imgUrl) {

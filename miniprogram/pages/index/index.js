@@ -38,6 +38,22 @@ Page({
         }
       }
     })
+    
+    // 获取服务器中的json文件
+    wx.request({
+      url: 'https://6d69-miniprog-ttsrs-1259681489.tcb.qcloud.la/rubbish_items.json?sign=df499073a28d82274d61a0270a8907d1&t=1564308345',
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        var app = getApp()
+        app.globalData.rubbish_table = res.data
+        // 测试使用的标签
+        var tags = ["弹药", "抢在"]
+        app.globalData.tagsTobeCate = tags
+      }
+
+    })
   },
 
   onGetUserInfo: function(e) {
