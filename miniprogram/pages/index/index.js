@@ -1,12 +1,13 @@
 //index.js
 const app = getApp()
-
+var WxSearch = require('../../wxSearch/wxSearch.js')
 Page({
   data: {
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,
     takeSession: false,
+    photopath:'',
     requestResult: '',
     ph:'./photo.png'
   },
@@ -18,6 +19,8 @@ Page({
       })
       return
     }
+    var that = this
+    WxSearch.init(that, 43, ['水瓶', '香蕉皮', '米饭', '车胎','电池']);
 
     // 获取用户信息
     wx.getSetting({
@@ -82,21 +85,32 @@ Page({
         })
 
         const filePath = res.tempFilePaths[0]
-        
+        var photoURL = ''
+        var resfileID = ''
         // 上传图片
         const cloudPath = 'my-image' + filePath.match(/\.[^.]+?$/)[0]
         wx.cloud.uploadFile({
           cloudPath,
           filePath,
           success: res => {
-            console.log('[上传文件] 成功：', res)
-
+            console.log('[上传文件] 成功：')
             app.globalData.fileID = res.fileID
             app.globalData.cloudPath = cloudPath
             app.globalData.imagePath = filePath
-            
-            wx.navigateTo({
-              url: '../storageConsole/storageConsole'
+            resfileID = res.fileID
+
+            wx.cloud.getTempFileURL({
+              fileList: [resfileID],
+              success: res => {
+                app.globalData.tempFileURL = res.fileList[0].tempFileURL
+                wx.navigateTo({
+                  url: '../storageConsole/storageConsole',
+                })
+              },
+              fail: err => {
+                console.log('fail getTempFileURL ')
+
+              }
             })
           },
           fail: e => {
@@ -110,12 +124,47 @@ Page({
             wx.hideLoading()
           }
         })
-
+        
       },
       fail: e => {
         console.error(e)
       }
     })
   },
+  //搜索框逻辑
+  wxSearchFn: function (e) {
+    var that = this
+    WxSearch.wxSearchAddHisKey(that);
+
+  },
+  wxSearchInput: function (e) {
+    var that = this
+    WxSearch.wxSearchInput(e, that);
+  },
+  wxSerchFocus: function (e) {
+    var that = this
+    WxSearch.wxSearchFocus(e, that);
+  },
+  wxSearchBlur: function (e) {
+    var that = this
+    WxSearch.wxSearchBlur(e, that);
+  },
+  wxSearchKeyTap: function (e) {
+    var that = this
+    WxSearch.wxSearchKeyTap(e, that);
+  },
+  wxSearchDeleteKey: function (e) {
+    var that = this
+    WxSearch.wxSearchDeleteKey(e, that);
+  },
+  wxSearchDeleteAll: function (e) {
+    var that = this;
+    WxSearch.wxSearchDeleteAll(that);
+  },
+  wxSearchTap: function (e) {
+    var that = this
+    WxSearch.wxSearchHiddenPancel(that);
+  },
 
 })
+

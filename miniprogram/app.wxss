@@ -44,19 +44,22 @@ page {
 .userinfo-avatar {
   width: 100rpx;
   height: 100rpx;
-  margin: 20rpx;
+  margin: 200rpx 200rpx 200rpx 200rpx;
   border-radius: 50%;
   background-size: cover;
   background-color: white;
 }
 
-.userinfo-avatarph {
-  width: 100rpx;
-  height: 100rpx;
-  margin: 20rpx;
-  border-radius: 90%;
+.uploadphoto-btn {
+  position:flex;
+  top: 250rpx;
+  margin-top:0rpx;
+  width: 230rpx;
+  height: 140rpx;
+  display: flex;
+  border-radius: 0%;
   background-size: cover;
-  background-color: rgb(42, 28, 243);
+  background-color: rgb(255,255, 255);
 }
 
 .userinfo-avatar:after {
@@ -84,7 +87,7 @@ page {
 
 .uploader-text, .tunnel-text {
   width: 100%;
-  line-height: 52px;
+  line-height: 52rpx;
   font-size: 34rpx;
   color: #007aff;
 }
@@ -164,4 +167,3 @@ page {
   line-height: 36rpx;
   word-break: break-all;
 }
-

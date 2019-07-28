@@ -8,6 +8,7 @@ Page({
     fileID: '',
     cloudPath: '',
     imagePath: '',
+    tempFileURL: '',
   },
 
   onLoad: function (options) {
@@ -16,12 +17,14 @@ Page({
       fileID,
       cloudPath,
       imagePath,
+      tempFileURL,
     } = app.globalData
 
     this.setData({
       fileID,
       cloudPath,
       imagePath,
+      tempFileURL,
     })
 
     console.group('文件存储文档')

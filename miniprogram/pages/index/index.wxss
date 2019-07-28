@@ -1,3 +1,4 @@
+@import "/wxSearch/wxSearch.wxss";
 /**index.wxss**/
 
 page {
@@ -47,15 +48,16 @@ page {
 
 .upphoto
 {
-  left: 134rpx;
-  top: 102rpx;
-  width: 106rpx;
-  height: 105rpx;
-  line-height: 20rpx;
-  background-color: rgb(253, 253, 253);
+  left: 250rpx;
+  top: 190rpx;
+  width: 200rpx;
+  height: 190rpx;
+  line-height: 40rpx;
+  background-color: rgb(255, 255, 255);
   text-align: center;
-  border: 1rpx solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
 }
+
 .uploader, .tunnel {
   height: auto;
   padding: 0 0 0 40rpx;
@@ -146,3 +148,14 @@ page {
   line-height: 36rpx;
   word-break: break-all;
 }
+
+.btn2
+{
+  width: 160rpx;
+  height: 140rpx;
+  margin: 20rpx;
+  border-radius: 0%;
+  background-size: cover;
+  background-color: rgb(255,255, 255);
+}
+
