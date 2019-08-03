@@ -21,16 +21,18 @@
     "navigationBarTextStyle": "black" 
   },
   "tabBar" : {
-    "selectedColor": "blue", 
-    "borderStyle": "black", 
     "list" : [
       {
         "pagePath" : "pages/index/index",
-        "text": "扫描"
+        "iconPath" : "images/icon_home.png",
+        "selectedIconPath" : "images/icon_home.png",
+        "text": "Home"
       },
       {
         "pagePath" : "pages/personal/personal",
-        "text": "个人中心"
+        "iconPath" : "images/icon_personal.png",
+        "selectedIconPath": "images/icon_personal.png",        
+        "text": "Mine"
       }
     ]
   },
