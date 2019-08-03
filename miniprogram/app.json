@@ -20,5 +20,19 @@
     "navigationBarTitleText": "垃圾分类小程序",
     "navigationBarTextStyle": "black" 
   },
+  "tabBar" : {
+    "selectedColor": "blue", 
+    "borderStyle": "black", 
+    "list" : [
+      {
+        "pagePath" : "pages/index/index",
+        "text": "扫描"
+      },
+      {
+        "pagePath" : "pages/personal/personal",
+        "text": "个人中心"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json"
 }
