@@ -1,5 +1,8 @@
 //app.js
 App({
+  globalData: {
+    achieve_list: []
+  },
   onLaunch: function () {
     
     if (!wx.cloud) {

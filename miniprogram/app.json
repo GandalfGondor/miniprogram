@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/personal/personal",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
@@ -18,6 +19,22 @@
     "navigationBarBackgroundColor": "#33CCFF",
     "navigationBarTitleText": "垃圾分类小程序",
     "navigationBarTextStyle": "black" 
+  },
+  "tabBar" : {
+    "list" : [
+      {
+        "pagePath" : "pages/index/index",
+        "iconPath" : "images/icon_home.png",
+        "selectedIconPath" : "images/icon_home.png",
+        "text": "Home"
+      },
+      {
+        "pagePath" : "pages/personal/personal",
+        "iconPath" : "images/icon_personal.png",
+        "selectedIconPath": "images/icon_personal.png",        
+        "text": "Mine"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
