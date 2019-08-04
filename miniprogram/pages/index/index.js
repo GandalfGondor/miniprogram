@@ -9,8 +9,7 @@ Page({
     takeSession: false,
     photopath:'',
     requestResult: '',
-    ph:'./photo.png',
-    wxSearchData:''
+    ph:'./photo.png'
   },
 
   onLoad: function() {
@@ -42,29 +41,16 @@ Page({
     
     // 获取服务器中的json文件
     wx.request({
-      url: 'https://6d69-miniprog-ttsrs-1259681489.tcb.qcloud.la/rubbish_items.json?sign=df499073a28d82274d61a0270a8907d1&t=1564308345',
+      url: 'https://6d69-miniprog-ttsrs-1259681489.tcb.qcloud.la/rubbish_items.json?sign=6a8b4d82b40adac7fa288abfad4cf836&t=1564823960',
       header: {
         'content-type': 'application/json'
       },
       success: function (res) {
         var app = getApp()
         app.globalData.rubbish_table = res.data
-        // 测试使用的标签
-        var tags = ["弹药", "抢在"]
-        app.globalData.tagsTobeCate = tags
       }
 
     })
-
-    /*个人中心 begin*/
-    const dbconn = wx.cloud.database()
-    dbconn.collection("AchieveItem").get({
-      success: function (res) {
-        app.globalData.achieve_list = res.data
-      }
-    })
-    /*个人中心 end*/
-
   },
 
   onGetUserInfo: function(e) {
@@ -163,24 +149,6 @@ Page({
     var that = this
     WxSearch.wxSearchAddHisKey(that);
     //添加
-    var word = this.data.wxSearchData.value
-    console.log(word);
-
-    if (!this.validate(word)){
-      wx.showToast({
-        title: '输入参数不合法',
-        icon: 'none',
-        duration: 2000,
-        success: function (e) {
-        }
-      })
-      return;
-    }
-    
-    wx.navigateTo({
-      url: '/pages/textSearchRes/textSearchRes?query=' + word
-   });
-
 
   },
   wxSearchInput: function (e) {
@@ -212,12 +180,5 @@ Page({
     WxSearch.wxSearchHiddenPancel(that);
   },
 
-  // 验证输入
-  validate: function(word) {
-    if (!(/^[\u4E00-\u9FA5A-Za-z]+$/.test(word))){
-      return false;
-    }
-    return true;
-  }
 })
 
