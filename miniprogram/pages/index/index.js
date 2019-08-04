@@ -9,7 +9,8 @@ Page({
     takeSession: false,
     photopath:'',
     requestResult: '',
-    ph:'./photo.png'
+    ph:'./photo.png',
+    wxSearchData:''
   },
 
   onLoad: function() {
@@ -38,7 +39,6 @@ Page({
         }
       }
     })
-<<<<<<< HEAD
     
     // 获取服务器中的json文件
     wx.request({
@@ -163,6 +163,24 @@ Page({
     var that = this
     WxSearch.wxSearchAddHisKey(that);
     //添加
+    var word = this.data.wxSearchData.value
+    console.log(word);
+
+    if (!this.validate(word)){
+      wx.showToast({
+        title: '输入参数不合法',
+        icon: 'none',
+        duration: 2000,
+        success: function (e) {
+        }
+      })
+      return;
+    }
+    
+    wx.navigateTo({
+      url: '/pages/textSearchRes/textSearchRes?query=' + word
+   });
+
 
   },
   wxSearchInput: function (e) {
@@ -194,5 +212,12 @@ Page({
     WxSearch.wxSearchHiddenPancel(that);
   },
 
+  // 验证输入
+  validate: function(word) {
+    if (!(/^[\u4E00-\u9FA5A-Za-z]+$/.test(word))){
+      return false;
+    }
+    return true;
+  }
 })
 
