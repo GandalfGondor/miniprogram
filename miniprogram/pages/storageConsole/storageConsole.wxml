@@ -1,19 +1,13 @@
 <!--pages/storageConsole/storageConsole.wxml-->
-<view class="container">
-
-  <view class="list">
-    <view class="list-item" bindtap="testCgi">
-      <text class="black">上传成功</text>
-    </view>
-    <view class="list-item">
-      <text class="request-text">上传图片的 ID：{{fileID}}</text>
-    </view>
-    <view class="list-item">
-      <text class="request-text">上传图片的 URL：{{tempFileURL}}</text>
-    </view>
-    <view class="list-item">
-      <image class="image1" src="{{imagePath}}" mode="aspectFit"></image>
-    </view>
+<view class="list">
+  <view class="list-item" bindtap="testCgi">
+    <text class="black">看看AI的能力吧</text>
   </view>
-
+  <view class="list-item">
+    <image class="image1" src="{{imagePath}}" mode="aspectFit"></image>
+  </view>
+    <view class="list-item">
+    <text class="request-text">{{itemCategory}}</text>
+  </view>
 </view>
+
