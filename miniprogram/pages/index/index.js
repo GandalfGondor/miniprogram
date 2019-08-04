@@ -51,6 +51,16 @@ Page({
       }
 
     })
+
+    /*个人中心 begin*/
+    const dbconn = wx.cloud.database()
+    dbconn.collection("AchieveItem").get({
+      success: function (res) {
+        app.globalData.achieve_list = res.data
+      }
+    })
+	  /*个人中心 end*/
+
   },
 
   onGetUserInfo: function(e) {

@@ -6,7 +6,7 @@
                 <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" />
             </view>
             <view class="weui-article__p">  
-                {{query}}
+                {{itemCategory}}
             </view>
           </view>
         </view>

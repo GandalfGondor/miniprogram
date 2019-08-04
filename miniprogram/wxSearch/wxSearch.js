@@ -156,31 +156,42 @@ function getHisKeys(that) {
 function wxSearchAddHisKey(that) {
     wxSearchHiddenPancel(that);
     var text = that.data.wxSearchData.value;
-    if(typeof(text) == "undefined" || text.length == 0){return;}
-    var value = wx.getStorageSync('wxSearchHisKeys');
-    if(value){
-        if(value.indexOf(text) < 0){
-            value.unshift(text);
-        }
-        wx.setStorage({
-            key:"wxSearchHisKeys",
-            data:value,
-            success: function(){
-                getHisKeys(that);
-            }
+    if (typeof (text) == "undefined" || text.length == 0 || !validate(text)){
+        wx.showToast({
+          title: '输入参数不合法',
+          icon: 'none',
+          duration: 2000,
+          success: function (e) {
+          }
         })
-    }else{
-        value = [];
-        value.push(text);
-        wx.setStorage({
-            key:"wxSearchHisKeys",
-            data:value,
-            success: function(){
-                getHisKeys(that);
-            }
-        })
-    }
-    
+        return;
+      }
+      var value = wx.getStorageSync('wxSearchHisKeys');
+      if(value){
+          if(value.indexOf(text) < 0){
+              value.unshift(text);
+          }
+          wx.setStorage({
+              key:"wxSearchHisKeys",
+              data:value,
+              success: function(){
+                  getHisKeys(that);
+              }
+          })
+      }else{
+          value = [];
+          value.push(text);
+          wx.setStorage({
+              key:"wxSearchHisKeys",
+              data:value,
+              success: function(){
+                  getHisKeys(that);
+              }
+          })
+      }
+    wx.navigateTo({
+      url: '/pages/textSearchRes/textSearchRes?query=' + text
+    });
     
 }
 function wxSearchDeleteKey(e,that) {
@@ -207,6 +218,14 @@ function wxSearchDeleteAll(that){
             });
         } 
     })
+}
+
+// 验证输入
+function validate(word) {
+  if (!(/^[\u4E00-\u9FA5A-Za-z]+$/.test(word))) {
+    return false;
+  }
+  return true;
 }
 
 

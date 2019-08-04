@@ -1,4 +1,7 @@
 // miniprogram/pages/textSearchRes/textSearchRes.js
+
+const app = getApp()
+
 Page({
 
   /**
@@ -6,16 +9,21 @@ Page({
    */
   data: {
     query:'',
-    hasQuery:false
+    hasQuery:false,
+
+    itemCategory: 'AI拼命查询中...'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var tags = [options.query];
+    app.globalData.tagsTobeCate = tags
+    console.log(tags);
 
-    console.log(options.query);
+    this.getCategory();
+
     this.setData({
       query: options.query,
       hasQuery: true
@@ -29,45 +37,28 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  getCategory: function () {
+    var tagsTobeCate = app.globalData.tagsTobeCate
+    var rubbish_table = app.globalData.rubbish_table
+    var found = 0
+    var msg = ""
+    for (var i = 0; i < tagsTobeCate.length; i++) {
+      for (var j = 0; j < rubbish_table.length; j++) {
+        if (rubbish_table[j].item == tagsTobeCate[i]) {
+          msg = msg + (tagsTobeCate[i] + "是" + rubbish_table[j].tag + '\n')
+          found = 1
+          break
+        }
+      }
+    }
+    if (0 == found)
+      msg = "AI未识别哦，换个角度呗：）"
+    console.log(msg)
+    this.setData({
+      itemCategory: msg
+    })
   }
+
+
 })
