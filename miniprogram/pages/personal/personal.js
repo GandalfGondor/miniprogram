@@ -11,14 +11,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(app.globalData.achieve_list)
-    this.setData({
-      achievement_list: app.globalData.achieve_list
-    })
+    /*
     wx.loadFontFace({
       family: "MyFont",
       source: 'url("https://bucket-1-1259654469.cos.ap-shenzhen-fsi.myqcloud.com/Montserrat-SemiBoldItalic.ttf")'
     })
+    */
   },
 
   onDetail: function(param) {
@@ -39,8 +37,35 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-    
+  onShow: function () {  
+    this.setData({
+      game_score: app.globalData.gTotalScore,
+      scan_total: app.globalData.gTotalScan
+    })
+    var list = []
+
+    app.globalData.achieve_list.forEach(
+      function (item, index) {
+        if ((item.scan_level <= app.globalData.gTotalScan) && (item.score_level <= app.globalData.gTotalScore)) {
+          var tempitem = item
+          tempitem.done = true
+          list.push(tempitem)
+        }
+      }
+    )
+    app.globalData.achieve_list.forEach(
+      function (item, index) {
+        if ((item.scan_level > app.globalData.gTotalScan) || (item.score_level > app.globalData.gTotalScore)) {
+          var tempitem = item
+          tempitem.done = false
+          list.push(tempitem)
+        }
+      }
+    )
+    this.setData({
+      achievement_list : list
+    })
+    console.log(list)
   },
 
   /**

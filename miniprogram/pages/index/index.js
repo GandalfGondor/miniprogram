@@ -53,14 +53,68 @@ Page({
     })
 
     /*个人中心 begin*/
+    wx.cloud.callFunction({
+      name: 'login',
+      data: {},
+      success: res => {
+        console.log('[云函数] [login] user openid: ', res.result.openid)
+        app.globalData.openid = res.result.openid
+        dbconn.collection("user").where({
+          _openid: app.globalData.openid
+        }).get({
+          success: function (res) {
+            console.log(res.data)
+            if (res.data.length == 0) { //新用户
+              dbconn.collection("user").add({
+                data: {
+                  total_score: app.globalData.gTotalScore,
+                  total_scan: app.globalData.gTotalScan,
+                  max_score: app.globalData.gMaxScore
+                },
+                success: function (res) {
+                  console.log(res)
+                  app.globalData.id = res.data[0]._id
+                }
+              })
+            } else {    //旧用户
+              app.globalData.gTotalScore = res.data[0].total_score
+              app.globalData.gTotalScan = res.data[0].total_scan
+              app.globalData.gMaxScore = res.data[0].max_score
+              app.globalData.id = res.data[0]._id
+            }
+
+            /*已测试，更新total_scan、total_score、max_score
+            //根据要求修改对应的gTotalScan、gTotalScore和gMaxScore。
+            //gTotalScan:垃圾分类识别总数，gTotalScore：游戏累计分数，gMaxScore：单次游戏最大得分
+            app.globalData.gTotalScan = app.globalData.gTotalScan + 1
+            app.globalData.gTotalScore = app.globalData.gTotalScore + game score
+            app.globalData.gMaxScore = game score > app.globalData.gMaxScore?  game score : app.globalData.gMaxScore
+            console.log(app.globalData.id)
+            dbconn.collection("user").doc(app.globalData.id).update({
+              data: {
+                total_score: app.globalData.gTotalScan,
+                max_score: app.globalData.gTotalScore
+              },
+              success: function (res) {
+                console.log(res)
+              }
+            })
+            */
+          }
+        })
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
+      }
+    })
     const dbconn = wx.cloud.database()
     dbconn.collection("AchieveItem").get({
       success: function (res) {
         app.globalData.achieve_list = res.data
       }
     })
-	  /*个人中心 end*/
 
+	  /*个人中心 end*/
   },
 
   onGetUserInfo: function(e) {

@@ -26,7 +26,12 @@
         <view class="aweui-grids">
             <block wx:for="{{achievement_list}}" wx:key="*this">
                 <view bindtap="onDetail" data-name="{{item.name}}" data-scoreneed="{{item.score_level}}" data-scanneed="{{item.scan_level}}" class="aweui-grid" hover-class="weui-grid_active">
-                    <image class="aweui-grid__icon icon_view" src="../../images/achieve_done.png" />
+                    <view wx:if="{{item.done==true}}">
+                        <image class="aweui-grid__icon icon_view" src="../../images/achieve_done.png" />
+                    </view>
+                    <view wx:else>
+                        <image class="aweui-grid__icon icon_view" src="../../images/achieve_todo.png" />
+                    </view>
                     <view class="aweui-grid__label">{{item.name}}</view>
                 </view>
             </block>
