@@ -84,9 +84,9 @@ Page({
             }
 
             /*已测试，更新total_scan、total_score、max_score
-            //根据要求修改对应的gTotalScan、gTotalScore和gMaxScore。
             //gTotalScan:垃圾分类识别总数，gTotalScore：游戏累计分数，gMaxScore：单次游戏最大得分
-            app.globalData.gTotalScan = app.globalData.gTotalScan + 1
+            //根据要求修改对应的gTotalScan、gTotalScore和gMaxScore。游戏修改gTotalScore和gMaxScore，垃圾分别识别修改gTotalScan
+            //app.globalData.gTotalScan = app.globalData.gTotalScan + 1
             app.globalData.gTotalScore = app.globalData.gTotalScore + game score
             app.globalData.gMaxScore = game score > app.globalData.gMaxScore?  game score : app.globalData.gMaxScore
             console.log(app.globalData.id)
