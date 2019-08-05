@@ -92,8 +92,9 @@ Page({
             console.log(app.globalData.id)
             dbconn.collection("user").doc(app.globalData.id).update({
               data: {
-                total_score: app.globalData.gTotalScan,
-                max_score: app.globalData.gTotalScore
+                total_score: app.globalData.gTotalScore,
+                max_score: app.globalData.gMaxScore
+                //total_scan: app.globalData.gTotalScan
               },
               success: function (res) {
                 console.log(res)
