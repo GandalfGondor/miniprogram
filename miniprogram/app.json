@@ -6,6 +6,10 @@
     "pages/baike/wet/wet",
     "pages/baike/recyclable/recyclable",
     "pages/baike/harmful/harmful",
+    "pages/baike/hot/hot",
+    "pages/baike/define/define",
+    "pages/baike/hot/top1/top1",
+    "pages/baike/hot/top2/top2",
     "pages/personal/personal",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -29,6 +33,22 @@
     "navigationBarBackgroundColor": "#33CCFF",
     "navigationBarTitleText": "垃圾分类小程序",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "images/icon_personal.png",
+        "selectedIconPath": "images/icon_personal.png",
+        "text": "Mine"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

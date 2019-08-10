@@ -1,0 +1,10 @@
+<!--pages/baike/hot/top2/top2.wxml-->
+<view class="container">
+  <view class="guide">
+    <text class="headline">垃圾分类注意事项</text>
+    <text class="p">市民在家中或单位等地产生垃圾时，应将垃圾按本地区的要求做到分类贮存或投放，并注意做到以下几点：</text>
+    <text class="p">1. 投放前纸类应尽量叠放整齐，避免揉团；瓶罐类物品应尽可能将容器内产品用尽后，清理干净后投放；厨余垃圾应做到袋装、密闭投放。塑料制品的瓶子捏扁放入垃圾箱。 </text>
+    <text class="p">2. 投放时应按垃圾分类标志的提示，分别投放到指定的地点和容器中。玻璃类物品应小心轻放，以免破损。</text>
+    <text class="p">3. 投放后应注意盖好垃圾桶上盖，以免垃圾污染周围环境，蚊蝇滋生。</text>
+  </view>
+</view>

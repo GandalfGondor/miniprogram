@@ -23,7 +23,7 @@ Page({
     answerB: "可回收物",
     answerC: "有害垃圾",
     answerD:"其他垃圾",
-    list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,21,22,23,24]
+    list: [14, 15, 16, 17, 18, 19,21,22,23,24]
   },
 
   randSort: function () {
@@ -62,7 +62,7 @@ Page({
       index: this.data.index + tag ,
       realIndex: this.data.list[this.data.index],
     })
-    if (this.data.index >= 25) {
+    if (this.data.index >= 10) {
       wx.redirectTo({
         url: '/pages/result/result?right_answer=' + this.data.right_answer + '&wrong_answer=' + this.data.wrong_answer,
       })
@@ -94,7 +94,7 @@ Page({
       index: this.data.index + 1,
       realIndex: this.data.list[this.data.index],
     })
-    if (this.data.index >= 25) {
+    if (this.data.index >= 10) {
       wx.redirectTo({
         url: '/pages/result/result?right_answer=' + this.data.right_answer + '&wrong_answer=' + this.data.wrong_answer,
       })
@@ -127,7 +127,7 @@ Page({
       realIndex: this.data.list[this.data.index],
 
     })
-    if (this.data.index >= 25) {
+    if (this.data.index >= 10) {
       wx.redirectTo({
         url: '/pages/result/result?right_answer=' + this.data.right_answer + '&wrong_answer=' + this.data.wrong_answer,
       })
@@ -160,7 +160,7 @@ Page({
       realIndex: this.data.list[this.data.index],
 
     })
-    if (this.data.index >= 25) {
+    if (this.data.index >= 10) {
       wx.redirectTo({
         url: '/pages/result/result?right_answer=' + this.data.right_answer + '&wrong_answer=' + this.data.wrong_answer,
       })

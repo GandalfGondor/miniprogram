@@ -1,2 +1,135 @@
 /* pages/baike/baike.wxss */
 @import "../../style/guide.wxss";
+
+.Dry{
+  width: 250rpx;
+  height: 250rpx;
+  padding:0 20rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 250rpx 250rpx;
+  background-repeat:no-repeat;
+  border:none;
+  margin-top: 610rpx;
+  right: 95rpx;
+  color: rgb(14, 0, 0);
+  font-size: 80rpx;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Wet{
+  width: 232rpx;
+  height: 295rpx;
+  padding:0 20rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 232rpx 295rpx;
+  background-repeat:no-repeat;
+  border:none;
+  margin-top: 548rpx;
+  left: 148rpx;
+  color: rgb(14, 0, 0);
+  font-size: 80rpx;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Recyclable{
+  width: 250rpx;
+  height: 252rpx;
+  padding:0 20rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 250rpx 252rpx;
+  background-repeat:no-repeat;
+  border:none;
+  margin-top: 360rpx;
+  left: 155rpx;
+  color: rgb(14, 0, 0);
+  font-size: 80rpx;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Harmful{
+  width: 270rpx;
+  height: 310rpx;
+  padding:0 20rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 270rpx 310rpx;
+  background-repeat:no-repeat;
+  border:none;
+  margin-top: 360rpx;
+  right: 92rpx;
+  color: rgb(14, 0, 0);
+  font-size: 80rpx;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.Hot{
+  width: 400rpx;
+  height: 130rpx;
+  padding:0 20rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 250rpx 100rpx;
+  background-repeat:no-repeat;
+  border:none;
+  margin-top: 950rpx;
+  color: rgb(14, 0, 0);
+  font-size: 80rpx;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Define{
+  width: 230rpx;
+  height: 230rpx;
+  padding:0 20rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 250rpx 100rpx;
+  background-repeat:no-repeat;
+  border:none;
+  margin-top: 100rpx;
+  color: rgb(14, 0, 0);
+  font-size: 80rpx;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

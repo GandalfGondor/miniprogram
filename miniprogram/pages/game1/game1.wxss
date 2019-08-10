@@ -20,5 +20,5 @@
   margin-top: 200px;
 }
 page {
-  background: white;
+  background: #C3C0C0;
 }

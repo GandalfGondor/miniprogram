@@ -1,0 +1,11 @@
+<!--pages/baike/hot/top1/top1.wxml-->
+<view class="container">
+  <view class="guide">
+    <text class="headline">垃圾分类的好处</text>
+    <text class="p">1. 分离厨房垃圾，主要由易腐烂的有机成分组成，为垃圾堆肥提供优质原料，生产优质有机肥，有利于提高土壤肥力，降低施肥量;</text>
+    <text class="p">2. 排除危险废物，减少垃圾中重金属，有机污染物和病原菌的含量，有利于垃圾的无害化处理，降低垃圾处理造成的水，土壤和空气污染风险; </text>
+    <text class="p">3. 增加废物回收比例，减少对原材料的需求，减少二氧化碳排放;</text>
+    <text class="p">4. 普及环保和垃圾知识，提高全社会对环卫产业的认识，降低环卫工人的难度，营造尊重和关心环卫工人的氛围。</text>
+  </view>
+</view>
+
