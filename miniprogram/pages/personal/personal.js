@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    modalHidden : true,
+    window_text1 : "hhhhh"
   },
 
   /**
@@ -20,11 +22,30 @@ Page({
   },
 
   onDetail: function(param) {
+    this.setData({
+      modalHidden: false
+    })
+    /*
+    console.log(param)
     wx.showModal({
       title: param.currentTarget.dataset.name,
       content: '扫垃圾数: ' + param.currentTarget.dataset.scanneed + '\r\n游戏得分: ' + param.currentTarget.dataset.scoreneed,
     })
-    console.log(param.currentTarget.dataset)
+    console.log(param.currentTarget.dataset) */
+  },
+
+  modalCandel: function () {
+    // do something
+    this.setData({
+      modalHidden: true
+    })
+  },
+
+  modalConfirm: function () {
+    // do something
+    this.setData({
+      modalHidden: true
+    })
   },
 
   /**
