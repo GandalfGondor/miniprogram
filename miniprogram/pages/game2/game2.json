@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "竞速模式",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#CE473A"
 }
