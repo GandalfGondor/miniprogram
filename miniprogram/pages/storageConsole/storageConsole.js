@@ -135,7 +135,7 @@ Page({
     })
   },
   gotoIndex: function () {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../index/index',
     })
   }
