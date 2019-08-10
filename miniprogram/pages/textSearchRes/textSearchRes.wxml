@@ -3,9 +3,9 @@
         <view class="weui-article">
           <view class="weui-article__section">
             <view class="weui-article__p">  
-                <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                <image class="weui-article__img" src="../../images/textRes_nores.png" mode="aspectFit" style="height: 180px" />
             </view>
-            <view class="weui-article__p">  
+            <view class="weui-article__p" style="display:flex;justify-content:center;">  
                 {{itemCategory}}
             </view>
           </view>
