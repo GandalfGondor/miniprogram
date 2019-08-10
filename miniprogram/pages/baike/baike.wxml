@@ -1,33 +1,18 @@
 <!--pages/baike/baike.wxml-->
 <view class="container">
-  <view class="guide">
-    <text class="headline">垃圾分类</text>
-    <text class="p">垃圾分类，指按一定规定或标准将垃圾分类储存、分类投放和分类搬运，从而转变成公共资源的一系列活动的总称。分类的目的是提高垃圾的资源价值和经济价值，力争物尽其用。</text>
-    <text class="p">2019年6月25日，生活垃圾分类制度将入法。</text>
-  </view>
+  <!-- 垃圾分类定义 -->
+  <image class="Define" bindtap="jumpToDefine" src="../../images/book.png"></image>
 
-  <view class="uploader">
-    <navigator url="./dry/dry" open-type="navigate" class="uploader-text">
-      <text>干垃圾</text>
-    </navigator>
-  </view>
-
-  <view class="uploader">
-    <navigator url="./wet/wet" open-type="navigate" class="uploader-text">
-      <text>湿垃圾</text>
-    </navigator>
-  </view>
-
-  <view class="uploader">
-    <navigator url="./recyclable/recyclable" open-type="navigate" class="uploader-text">
-      <text>可回收垃圾</text>
-    </navigator>
-  </view>
-   <view class="uploader">
-    <navigator url="./harmful/harmful" open-type="navigate" class="uploader-text">
-      <text>有害垃圾</text>
-    </navigator>
-  </view>
+  <!-- 干垃圾 -->
+  <image class="Dry" bindtap="jumpToDry" src="../../images/Dry.png"></image>
+  <!-- 湿垃圾 -->
+  <image class="Wet" bindtap="jumpToWet" src="../../images/Wet.png"></image>
+  <!-- 可回收垃圾 -->
+  <image class="Recyclable" bindtap="jumpToRecyclable" src="../../images/Recyclable.png"></image>
+  <!-- 有害垃圾 -->
+  <image class="Harmful" bindtap="jumpToHarmful" src="../../images/Harmful.png"></image>
+  <!-- 有害垃圾 -->
+  <image class="Hot" bindtap="jumpToHot" src="../../images/Hot.png"></image>
 </view>
 
 

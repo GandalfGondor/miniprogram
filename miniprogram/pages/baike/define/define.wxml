@@ -1,0 +1,9 @@
+<!--pages/baike/define/define.wxml-->
+<!--pages/baike/baike.wxml-->
+<view class="container">
+  <view class="guide">
+    <text class="headline">科普定义</text>
+    <text class="p">垃圾分类，指按一定规定或标准将垃圾分类储存、分类投放和分类搬运，从而转变成公共资源的一系列活动的总称。分类的目的是提高垃圾的资源价值和经济价值，力争物尽其用。</text>
+    <text class="p">2019年6月25日，生活垃圾分类制度入法。</text>
+  </view>
+</view>
