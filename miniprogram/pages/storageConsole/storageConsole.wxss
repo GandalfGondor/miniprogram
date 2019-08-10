@@ -11,9 +11,27 @@ image{
   margin-top:60rpx;
 }
 
+.goto {
+  position: relative;
+  width: 750rpx;
+  height: 230rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
 
-.text {
+.msgs{
   display:flex;
   justify-content:center;
+  margin-top:40rpx;
+  margin-bottom:10rpx;
   font-size: 40rpx;
+  color:#8a8a8a
+}
+
+.iconMsg{
+  margin:0 50rpx;
+  font-size:30rpx;
+  color:#8a8a8a
 }
