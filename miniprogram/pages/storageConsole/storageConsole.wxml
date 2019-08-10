@@ -1,13 +1,7 @@
 <!--pages/storageConsole/storageConsole.wxml-->
-<view class="list">
-  <view class="list-item" bindtap="testCgi">
-    <text class="black">看看AI的能力吧</text>
-  </view>
-  <view class="list-item">
-    <image class="image1" src="{{imagePath}}" mode="aspectFit"></image>
-  </view>
-    <view class="list-item">
-    <text class="request-text">{{itemCategory}}</text>
+<view class="page">
+  <view class="container" mode="aspectFit" >
+    <image class="img" src="{{imagePath}}"/>
+    <text class="text">{{itemCategory}}</text>
   </view>
 </view>
-
