@@ -54,6 +54,36 @@ Page({
       }
     })
   },
+  jumpToDry: function () {
+    wx.navigateTo({
+      url: 'dry/dry'
+    })
+  },
+  jumpToWet: function () {
+    wx.navigateTo({
+      url: 'wet/wet'
+    })
+  },
+  jumpToRecyclable: function () {
+    wx.navigateTo({
+      url: 'recyclable/recyclable'
+    })
+  },
+  jumpToHarmful: function () {
+    wx.navigateTo({
+      url: 'harmful/harmful'
+    })
+  },
+  jumpToHot: function () {
+    wx.navigateTo({
+      url: 'hot/hot'
+    })
+  },
+  jumpToDefine: function () {
+    wx.navigateTo({
+      url: 'define/define'
+    })
+  },
 
 })
 

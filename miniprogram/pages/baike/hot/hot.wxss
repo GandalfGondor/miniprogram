@@ -1,0 +1,19 @@
+/* pages/baike/hot/hot.wxss */
+@import "../../../style/guide.wxss";
+.headwords {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #555;
+  line-height: 20rpx;
+}
+
+.textwords {
+  width: 100%;
+  line-height: 52rpx;
+  font-size: 34rpx;
+  color: #007aff;
+}

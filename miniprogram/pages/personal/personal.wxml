@@ -23,33 +23,14 @@
     </view>
     
     <view class="personal__bd personal__bd_spacing">
-        <modal class="modal-styless" height='50%' title="{{window_title}}" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
-          <view>
-            <image class="aweui-grid__icon icon_view" src="{{window_img}}" />
-          </view>
-
-          <view class="aweui-grid__label">{{achieve_status}}</view>
-          <view class="aweui-grid__label">{{window_text1}}</view>
-          <view class="aweui-grid__label">{{window_text2}}</view>
-        </modal>
-
         <view class="aweui-grids">
             <block wx:for="{{achievement_list}}" wx:key="*this">
-                <view bindtap="onDetail" data-name="{{item.name}}" data-scoreneed="{{item.score_level}}" data-scanneed="{{item.scan_level}}" data-img_done="{{item.img_done}}" data-img_todo="{{item.img_todo}}" class="aweui-grid" hover-class="weui-grid_active">
-                
-                <!--
+                <view bindtap="onDetail" data-name="{{item.name}}" data-scoreneed="{{item.score_level}}" data-scanneed="{{item.scan_level}}" class="aweui-grid" hover-class="weui-grid_active">
                     <view wx:if="{{item.done==true}}">
                         <image class="aweui-grid__icon icon_view" src="../../images/achieve_done.png" />
                     </view>
                     <view wx:else>
                         <image class="aweui-grid__icon icon_view" src="../../images/achieve_todo.png" />
-                    </view>
-                -->
-                    <view wx:if="{{item.done==true}}">
-                        <image class="aweui-grid__icon icon_view" src="{{item.img_done}}" />
-                    </view>
-                    <view wx:else>
-                        <image class="aweui-grid__icon icon_view" src="{{item.img_todo}}" />
                     </view>
                     <view class="aweui-grid__label">{{item.name}}</view>
                 </view>

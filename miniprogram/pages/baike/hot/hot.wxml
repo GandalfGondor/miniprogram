@@ -1,0 +1,20 @@
+<!--pages/baike/hot/hot.wxml-->
+
+<view class="container">
+
+  <view class="guide">
+    <text class="headwords">热门话题</text>
+  </view>
+  <view class="uploader">
+    <navigator url="./top1/top1" open-type="navigate" class="textwords">
+      <text>1. 垃圾分类的好处</text>
+    </navigator>
+  </view>
+  <view class="uploader">
+    <navigator url="./top2/top2" open-type="navigate" class="textwords">
+      <text>2. 垃圾分类注意事项</text>
+    </navigator>
+  </view>
+ 
+</view>
+
