@@ -184,7 +184,8 @@ Page({
         var photoURL = ''
         var resfileID = ''
         // 上传图片
-        const cloudPath = 'my-image' + filePath.match(/\.[^.]+?$/)[0]
+        var timestamp = Date.parse(new Date());
+        const cloudPath = timestamp + filePath.match(/\.[^.]+?$/)[0]
         wx.cloud.uploadFile({
           cloudPath,
           filePath,

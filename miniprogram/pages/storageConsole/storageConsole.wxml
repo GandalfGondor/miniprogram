@@ -1,35 +1,38 @@
 <view class='page' >
-  <view class="page__bd page__bd_spacing">
-      <view class="container">  
-        <image class="img" src="{{imagePath}}" mode="aspectFit" style="height: 180px"/>
+  <image class="img" src="{{imagePath}}" mode="aspectFit" style="height: 180px"/>
+  <block wx:if="{{nr == 1}}">
+    <view class="container">  
+      <view class="msgs" wx:for="{{msgs}}">{{msgs[index]}} </view>
+      <view class="weui-article__p" class="iconMsg">{{iconMsg}}</view>
+      </view>
+  </block>
+  <block wx:if="{{nr > 1}}"> 
+    <view class="container">  
+      <view class="msgs" wx:for="{{msgs}}">{{msgs[index]}} </view>
+    </view>
+    <view class="goto" >
+      <block wx:if="{{categories['其他垃圾'] > 0}}">
+        <button class="btn" type='primary' bindtap="gotoDry">其他垃圾</button>
+      </block>
+      <block wx:if="{{categories['厨余垃圾'] > 0}}">
+        <button class="btn" type='primary' bindtap="gotoWet">厨余垃圾</button>
+      </block>
+      <block wx:if="{{categories['可回收垃'] > 0}}">
+        <button class="btn" type='primary' bindtap="gotoRec">可回收垃</button>
+      </block>
+      <block wx:if="{{categories['有害垃圾'] > 0}}">
+        <button class="btn" type='primary' bindtap="gotoHam">有害垃圾</button>
+      </block>
+    </view>
+  </block>
+   <block wx:if="{{nr == 0}}">
+    <view class="container">  
         <view class="msgs" wx:for="{{msgs}}">{{msgs[index]}} </view>
-      </view>
-
-      <view class="container2">
-        <block wx:if="{{nr == 1}}">
-         <view class="weui-article__p" class="iconMsg">
-                  {{iconMsg}} 
-            </view>
-        </block>
-        <block wx:elif="{{nr > 1}}"> 
-         <!--重定向到百科-->
-          <view class="goto" >
-            <block wx:if="{{categories['其他垃圾'] > 0}}">
-              <button class="btn" type='primary' bindtap="gotoDry">其他垃圾</button>
-            </block>
-            <block wx:if="{{categories['厨余垃圾'] > 0}}">
-              <button class="btn" type='primary' bindtap="gotoWet">厨余垃圾</button>
-            </block>
-            <block wx:if="{{categories['可回收垃'] > 0}}">
-              <button class="btn" type='primary' bindtap="gotoRec">可回收垃</button>
-            </block>
-            <block wx:if="{{categories['有害垃圾'] > 0}}">
-              <button class="btn" type='primary' bindtap="gotoHam">有害垃圾</button>
-            </block>
-          </view>
-         <!--重定向到百科结束-->
-        </block>
-        <block wx:else></block>
-      </view>
-  </view>
+        <view class="weui-article__p" class="iconMsg">{{iconMsg}}</view>
+    </view>
+    <view class="goto">  
+        <button class="btn" type='primary' bindtap="gotoBaike">查看百科</button>
+        <button class="btn" type='primary' bindtap="gotoIndex">返回首页</button>
+     </view>
+  </block>
 </view>
