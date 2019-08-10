@@ -6,14 +6,15 @@
                 <image class="weui-article__img" src="{{iconUrl}}" mode="aspectFit" style="height: 180px" />
             </view>
             <view class="weui-article__p" class="categoryMsg" >  
-                {{itemCategoryMsg}}  
-                             
+                {{itemCategoryMsg}}                            
             </view>
             <view class="weui-article__p" class="iconMsg">
                   {{iconMsg}} 
             </view>
+            <view wx:if="{{findItem}}" class="btnPos">
+              <button class="dictBtn weui-btn mini-btn" size="mini">{{itemCategory}}处理方法/{{itemCategory}}一览</button>
+            </view>
           </view>
-          
         </view>
     </view>
 </view>
