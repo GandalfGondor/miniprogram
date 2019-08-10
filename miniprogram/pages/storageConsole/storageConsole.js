@@ -9,7 +9,9 @@ Page({
     cloudPath: '',
     imagePath: '',
     tempFileURL: '',
-    itemCategory: 'AI拼命查询中...'
+    //itemCategory: 'AI拼命查询中...',
+    categories: {},
+    msgs : [],
   },
 
   onLoad: function (options) {
@@ -38,10 +40,15 @@ Page({
     var rubbish_table = getApp().globalData.rubbish_table
     var found = 0
     var msg = ""
+    var ms = []
+    var cates = {"有害垃圾":0, "厨余垃圾": 0 ,"其他垃圾": 0 ,"可回收垃圾": 0}
+                
     for (var i = 0; i < tagsTobeCate.length; i++) {
       for (var j = 0; j < rubbish_table.length; j++) {
         if (rubbish_table[j].item == tagsTobeCate[i]) {
-          msg = msg + ( tagsTobeCate[i] + "是" + rubbish_table[j].tag + '\n' )
+          msg = tagsTobeCate[i] + "是" + rubbish_table[j].tag
+          cates[rubbish_table[j].tag]++
+          ms.push(msg)
           found = 1
           break
         }
@@ -51,8 +58,11 @@ Page({
       msg = "AI未识别哦，换个角度呗：）"
     console.log(msg)
     this.setData ({
-      itemCategory : msg
+      msgs : ms,
+      categories: cates
     })
+    console.log(cates)
+    console.log(ms)
   },
 
   analyzeImg: function (imgUrl) {
