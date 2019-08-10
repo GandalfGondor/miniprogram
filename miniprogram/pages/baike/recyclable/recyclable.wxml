@@ -1,0 +1,8 @@
+<!--pages/baike/recyclable/recyclable.wxml-->
+<view class="container">
+  <view class="guide">
+    <text class="headline">什么是可回收垃圾</text>
+    <text class="p">可回收物主要包括废纸、塑料、玻璃、金属和布料五大类。</text>
+  </view>
+</view>
+

@@ -1,0 +1,3 @@
+/* pages/baike/recyclable/recyclable.wxss */
+
+@import "../../../style/guide.wxss";

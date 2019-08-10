@@ -192,6 +192,9 @@ function wxSearchAddHisKey(that) {
     wx.navigateTo({
       url: '/pages/textSearchRes/textSearchRes?query=' + text
     });
+    // wx.navigateTo({
+    //   url: "/pages/textSearchRes/textSearchRes"
+    // });
     
 }
 function wxSearchDeleteKey(e,that) {
