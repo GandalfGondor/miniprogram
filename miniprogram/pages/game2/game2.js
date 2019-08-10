@@ -18,7 +18,7 @@ Page({
     optionD: "D",
     right_answer: 0,
     wrong_answer: 0,
-    // questionDetail: app.globalData.question[0].item + "是什么垃圾？",
+    questionDetail: app.globalData.question[0].item + "是什么垃圾？",
     answerA: "厨余垃圾",
     answerB: "可回收物",
     answerC: "有害垃圾",

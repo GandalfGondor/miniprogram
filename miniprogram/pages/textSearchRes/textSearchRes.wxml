@@ -1,2 +1,20 @@
-<!--miniprogram/pages/textSearchRes/textSearchRes.wxml-->
-<text>miniprogram/pages/textSearchRes/textSearchRes.wxml</text>
+<view class='page' wx:if="{{hasQuery}}">
+    <view class="page__bd page__bd_spacing">
+        <view class="weui-article">
+          <view class="weui-article__section" class="section">
+            <view class="weui-article__p">  
+                <image class="weui-article__img" src="{{iconUrl}}" mode="aspectFit" style="height: 180px" />
+            </view>
+            <view class="weui-article__p" class="categoryMsg" >  
+                {{itemCategoryMsg}}                            
+            </view>
+            <view class="weui-article__p" class="iconMsg">
+                  {{iconMsg}} 
+            </view>
+            <view wx:if="{{findItem}}" class="btnPos">
+              <button class="dictBtn weui-btn mini-btn" bindtap="jumpToBaike" size="mini">{{itemCategory}}处理方法/{{itemCategory}}一览</button>
+            </view>
+          </view>
+        </view>
+    </view>
+</view>

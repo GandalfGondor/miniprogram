@@ -18,19 +18,12 @@ Page({
     optionD:"D",
     right_answer:0,
     wrong_answer:0,
-    questionDetail:"",
+    questionDetail: app.globalData.question[0].item + "是什么垃圾？",
     answerA: "厨余垃圾",
     answerB: "可回收物",
     answerC: "有害垃圾",
     answerD:"其他垃圾",
-    list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,21,22,23,24],
-  },
-
-  onLoad: function(){
-    // var initQitem = app.globalData.question[0].item
-    this.setData({
-      questionDetail: app.globalData.question[0].item + "是什么垃圾？",
-    })
+    list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,21,22,23,24]
   },
 
   randSort: function () {
