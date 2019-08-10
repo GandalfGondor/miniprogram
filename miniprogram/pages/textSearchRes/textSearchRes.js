@@ -11,7 +11,15 @@ Page({
     query:'',
     hasQuery:false,
 
-    itemCategory: 'AI拼命查询中...'
+    itemCategoryMsg: 'AI拼命查询中...',
+    findItem:false,
+    itemCategory:'',
+    iconMsg:'',
+
+    // iconUrl: '../../images/textRes_bad.png'
+    // iconUrl: '../../images/图片4.png'
+    // iconUrl: '../../images/textRes_bad1.ico'
+    iconUrl: '../../images/textRes_nores.png'
   },
 
   /**
@@ -47,18 +55,58 @@ Page({
       for (var j = 0; j < rubbish_table.length; j++) {
         if (rubbish_table[j].item == tagsTobeCate[i]) {
           msg = msg + (tagsTobeCate[i] + "是" + rubbish_table[j].tag + '\n')
+          this.changeIconMsg(rubbish_table[j].tag)
+
           found = 1
           break
         }
       }
     }
-    if (0 == found)
+
+    if (0 == found){
       msg = "AI未识别哦，换个角度呗：）"
-    console.log(msg)
+    }
+    else{
+      this.setData({
+        itemCategoryMsg: msg
+      })
+    }
+      
+  },
+
+  changeIconMsg: function (category) {
+
+    var iconUrl=''
+    var iconMsg=''
+    if (category == "其他垃圾" || category == "干垃圾"){
+      iconUrl ='../../images/textRes_other.png'
+      iconMsg = '干垃圾指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物。投入干垃圾收集容器，并保持周边环境整洁。' 
+    }
+    else if (category == "厨余垃圾" || category == "湿垃圾"){
+      iconUrl ='../../images/textRes_wet.png'
+      iconMsg = '湿垃圾即易腐垃圾，又称厨余垃圾，有机垃圾，指易腐烂的生活废弃物。'
+    }
+    else if (category == "有害垃圾"){
+      iconUrl ='../../images/textRes_bad.png'
+      iconMsg = '有害垃圾指对人体健康或者自然环境造成直接或者潜在危害的生活废弃物，含有有害重金属或有毒物质，常见包括废电池、废荧光灯管、废灯泡、废水银温度计等等。'
+    }
+    else if (category == "可回收垃圾"){
+      iconUrl ='../../images/textRes_recycle.png'
+      iconMsg = '可回收物就是可以再生循环利用的垃圾，主要包括废纸、塑料、玻璃、金属和布料五大类。'
+    }
+    else{
+      iconUrl=''
+    }
+
+
     this.setData({
-      itemCategory: msg
+      iconUrl:iconUrl,
+      iconMsg: iconMsg,
+      findItem:true,
+      itemCategory:category
     })
   }
+
 
 
 })
