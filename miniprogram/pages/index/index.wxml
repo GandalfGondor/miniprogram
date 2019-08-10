@@ -20,13 +20,19 @@
   <view>
    <button class="uploadphoto-btn" bindtap="doUpload">
    <view class="uploadphoto-image">
-    <image class='uploadphoto-image' src='../../images/camera3.png'></image>
+    <image class='uploadphoto-image' src='../../images/camera.png'></image>
     </view>
     </button>
   </view>
     <view class="uploader-container" wx:if="{{imgUrl}}">
       <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
     </view>
+  <!-- 小游戏 -->
+  <image class="game" bindtap="jumpToGame" src="../../images/gameinterface.png">
+  </image>
+  <!-- 百科 -->
+  <image class="baike" bindtap="jumpToBaike" src="../../images/baike.png">
+  </image>
 
 <!--搜索框-->
 <view class="wxSearch-section">
@@ -34,6 +40,11 @@
     <input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="请输入" />
     <button class="wxSearch-button" bindtap="wxSearchFn" size="mini" plain="true">搜索</button>
   </view>
+  <!-- <view class="wxGame-interface">
+  <image class="game-interface-photo" src="{{gameinterface_photo}}"bindtap="gameClick" mode="aspectFit" height="10px" weight="10px"></image>
+</view> -->
+
+
 </view>
 <template is="wxSearch" data="{{wxSearchData}}"/>
 

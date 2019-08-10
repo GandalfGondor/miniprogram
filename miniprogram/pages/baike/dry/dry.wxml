@@ -1,0 +1,8 @@
+<!--pages/baike/dry/dry.wxml-->
+<view class="container">
+  <view class="guide">
+    <text class="headline">什么是干垃圾</text>
+    <text class="p">干垃圾包括除上述几类垃圾之外的砖瓦陶瓷、渣土、卫生间废纸、纸巾等难以回收的废弃物及果壳、尘土、食品袋（盒）。采取卫生填埋可有效减少对地下水、地表水、土壤及空气的污染。</text>
+  </view>
+</view>
+

@@ -1,6 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/baike/baike",
+    "pages/baike/dry/dry",
+    "pages/baike/wet/wet",
+    "pages/baike/recyclable/recyclable",
+    "pages/baike/harmful/harmful",
     "pages/personal/personal",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -12,7 +17,11 @@
     "pages/openapi/serverapi/serverapi",
     "pages/openapi/callback/callback",
     "pages/openapi/cloudid/cloudid",
-    "pages/textSearchRes/textSearchRes"
+    "pages/textSearchRes/textSearchRes",
+    "pages/game1/game1",
+    "pages/game2/game2",
+    "pages/gamenavigation/gamenavigation",
+    "pages/result/result"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

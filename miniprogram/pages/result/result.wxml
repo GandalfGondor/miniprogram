@@ -1,0 +1,15 @@
+<!--pages/result/result.wxml-->
+<view class="page__hd" style="height:60px;"></view>
+<view>
+<view class='count_all' style="display:flex; justify-content:center; align-items:center;">
+  <image class="win_image" style="" src="../../images/cup1.png" mode="aspectFit">
+  </image>
+  </view>
+</view>
+<view class="page__hd2" style="height:20px;"></view>
+<view class='count_all' style="display:flex; justify-content:center; align-items:center;font-size: 55rpx;">
+    <view><text>您已答对：{{A}}道</text></view>
+</view>
+<view class='count_all' style="display:flex; justify-content:center; align-items:center;font-size: 55rpx;">
+    <view><text>您已答错：{{B}}道</text></view>
+</view>

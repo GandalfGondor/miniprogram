@@ -9,9 +9,9 @@ Page({
     cloudPath: '',
     imagePath: '',
     tempFileURL: '',
-    //itemCategory: 'AI拼命查询中...',
     categories: {},
     msgs : [],
+    itemCategory: 'AI拼命查询中...'
   },
 
   onLoad: function (options) {

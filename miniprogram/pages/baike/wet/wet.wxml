@@ -1,0 +1,7 @@
+<!--pages/baike/wet/wet.wxml-->
+<view class="container">
+  <view class="guide">
+    <text class="headline">什么是湿垃圾</text>
+    <text class="p">包括剩菜剩饭、骨头、菜根菜叶、果皮等食品类废物。经生物技术就地处理堆肥，每吨可生产0.6~0.7吨有机肥料。</text>
+  </view>
+</view>

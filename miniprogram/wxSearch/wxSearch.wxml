@@ -1,5 +1,5 @@
 <template name="wxSearch"> 
-  <view class="wxSearch" bindtap="wxSearchTap"  style="display:{{wxSearchData.view.isShow ? 'block':'none'}};height:{{wxSearchData.view.seachHeight}}rpx;top:{{wxSearchData.view.barHeight}}rpx;"> 
+  <view class="wxSearch" bindtap="wxSearchTap"  style="display:{{wxSearchData.view.isShow ? 'none':'block'}};height:180rpx;top:{{wxSearchData.view.barHeight}}rpx;"> 
     <view  class="wxSearchInner"> 
         <view class="wxSearchKey" style="display:{{wxSearchData.view.isShowSearchKey ? 'block':'none'}}"> 
             <text class="wxSearchTitle">热门搜索</text> 
@@ -9,6 +9,10 @@
                 </block> 
             </view> 
         </view> 
+    </view> 
+  </view>
+  <view class="wxSearch" bindtap="wxSearchTap"  style="display:{{wxSearchData.view.isShow ? 'block':'none'}};height:{{wxSearchData.view.seachHeight}}rpx;top:{{wxSearchData.view.barHeight}}rpx;"> 
+    <view  class="wxSearchInner"> 
         <view class="wxSearchHistory" style="display:{{wxSearchData.view.isShowSearchHistory ? 'block':'none'}}"> 
             <text class="wxSearchTitle">搜索历史</text> 
             <view wx:if="{{wxSearchData.his[0]}}" class="wxSearchHistoryList"> 

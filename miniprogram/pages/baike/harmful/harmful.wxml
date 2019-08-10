@@ -1,0 +1,8 @@
+<!--pages/baike/harmful/harmful.wxml-->
+<view class="container">
+  <view class="guide">
+    <text class="headline">什么是有害垃圾</text>
+    <text class="p">有害垃圾含有对人体健康有害的重金属、有毒的物质或者对环境造成现实危害或者潜在危害的废弃物。包括电池、荧光灯管、灯泡、水银温度计、油漆桶、部分家电、过期药品、过期化妆品等。这些垃圾一般使用单独回收或填埋处理。</text>
+  </view>
+</view>
+

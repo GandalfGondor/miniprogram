@@ -1,0 +1,40 @@
+<view class="page">
+  <view class='page__hd' style="height:100px; display:flex; justify-content:center; align-items:center;">
+    <view class="page__title" >{{index+1}}. {{questionDetail}}</view>
+  </view>
+  <view class="page__bd" style="display:flex; justify-content:center; align-items:center;">
+    <view class="weui-cells weui-cells_after-title">
+    <view style="height:65px;">
+            <view url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" style="width:260px; height:50px; border:1px solid #5599; border-radius: 30px; display:flex; justify-content:center; align-items:center;background-color:#F3F3F3" bindtap='answerClickA'>
+                <button class="weui-cell__bd">{{answerA}}</button>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            </view>
+<view style="height:65px;">
+            <view url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" style="width:260px; height:50px; border:1px solid #5599; border-radius: 30px; display:flex; justify-content:center; align-items:center;background-color:#F3F3F3" bindtap='answerClickB'>
+                <button class="weui-cell__bd">         {{answerB}}         </button>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            </view>
+<view style="height:65px;">
+            <view url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" style="width:260px; height:50px; border:1px solid #5599; border-radius: 30px; display:flex; justify-content:center; align-items:center;background-color:#F3F3F3" bindtap='answerClickC'>
+                <button class="weui-cell__bd">{{answerC}}</button>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+
+            </view>
+            </view>
+            <view style="height:65px;">
+                        <view url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active" style="width:260px; height:50px; border:1px solid #5599; border-radius: 30px; display:flex; justify-content:center; align-items:center;background-color:#F3F3F3" bindtap='answerClickD'>
+                <button class="weui-cell__bd">{{answerD}}</button>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+            </view>
+        </view>
+    
+  </view>
+  <view class='page__hd' style="height:90px; display:flex;justify-content:center; align-items:center;">
+      
+      <view class="page__title" style="font-size: 65rpx;display:flex; justify-content:center; align-items:center;">SCORE：{{right_answer}}</view>
+    
+    </view>
+</view>
