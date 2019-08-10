@@ -18,7 +18,50 @@ button::after{
   border: none;
 }
 
+.baike{
+  width: 200rpx;
+  height: 300rpx;
+  padding:0 20rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 200rpx 300rpx;
+  background-repeat:no-repeat;
+  border:none;
+  margin-top: 620rpx;
+  right: 140rpx;
+  color: rgb(14, 0, 0);
+  font-size: 80rpx;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+}
+.game{
+  width: 200rpx;
+  height: 300rpx;
+  padding:0 20rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 200rpx 300rpx;
+  background-repeat:no-repeat;
+  border:none;
+  margin-top: 620rpx;
+  left: 140rpx;
+  color: rgb(14, 0, 0);
+  font-size: 80rpx;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
 page {
   background: #f6f6f6;
   display: flex;
@@ -51,28 +94,26 @@ page {
 }
 
 .uploadphoto-image {
-  position:relative;
-  top: 15rpx;
-  left: 2rpx;
-  margin-top:0rpx;
-  width: 130rpx;
-  height: 120rpx;
+  position:absolute;
+  width: 200rpx;
+  left : 0rpx;
+  height: 200rpx;
   display: flex;
-  border-radius: 0%;
+  border-radius: 100%;
   background-size: cover;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(197, 197, 197);
 }
 
 .uploadphoto-btn {
   position:flex;
-  top: 200rpx;
+  top: 80rpx;
   margin-top:0rpx;
   width: 200rpx;
   height: 200rpx;
   display: flex;
   border-radius: 50%;
+  background-color: rgb(197, 197, 197);
   background-size: cover;
-  background-color: rgb(231, 231, 231);
 }
 
 .userinfo-avatar:after {

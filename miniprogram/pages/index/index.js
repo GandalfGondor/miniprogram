@@ -4,6 +4,7 @@ var WxSearch = require('../../wxSearch/wxSearch.js')
 Page({
   data: {
     avatarUrl: './user-unlogin.png',
+    gameinterface_photo:"../../images/gameinterface.png",
     userInfo: {},
     logged: false,
     takeSession: false,
@@ -77,6 +78,17 @@ Page({
           title: '获取失败',
         })
       }
+    })
+  },
+  jumpToGame: function () {
+    wx.navigateTo({
+      url: '../gamenavigation/gamenavigation'
+    })
+  },
+
+  jumpToBaike: function () {
+    wx.navigateTo({
+      url: '../baike/baike'
     })
   },
 
@@ -175,6 +187,10 @@ Page({
     var that = this
     WxSearch.wxSearchHiddenPancel(that);
   },
-
+  gameClick:function(e){
+    wx.navigateTo({
+      url: '../gamenavigation/gamenavigation',
+    })
+  }
 })
 
