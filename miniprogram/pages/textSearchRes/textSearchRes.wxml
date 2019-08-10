@@ -1,14 +1,19 @@
 <view class='page' wx:if="{{hasQuery}}">
     <view class="page__bd page__bd_spacing">
         <view class="weui-article">
-          <view class="weui-article__section">
+          <view class="weui-article__section" class="section">
             <view class="weui-article__p">  
-                <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                <image class="weui-article__img" src="{{iconUrl}}" mode="aspectFit" style="height: 180px" />
             </view>
-            <view class="weui-article__p">  
-                {{itemCategory}}
+            <view class="weui-article__p" class="categoryMsg" >  
+                {{itemCategoryMsg}}  
+                             
+            </view>
+            <view class="weui-article__p" class="iconMsg">
+                  {{iconMsg}} 
             </view>
           </view>
+          
         </view>
     </view>
 </view>
