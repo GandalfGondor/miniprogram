@@ -2,14 +2,17 @@ page{
     background-color: FFFFFF;
 }
 
-.img {
-  margin-top:60rpx;
+.preview {
+  margin-top:40rpx;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
 }
 
 .container {
   display:flex;
   justify-content:center;
-  
 }
 
 .goto {
@@ -35,13 +38,4 @@ page{
   margin:0 50rpx;
   font-size:35rpx;
   color:#8a8a8a
-}
-.goto2 {
-  position: relative;
-  width: 750rpx;
-  height: 230rpx;
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  align-items:center;
 }

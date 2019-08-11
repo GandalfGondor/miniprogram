@@ -1,5 +1,7 @@
 <view class='page' >
-  <image class="img" src="{{imagePath}}" mode="aspectFit" style="height: 180px"/>
+  <view class="preview">
+    <image class="img" src="{{imagePath}}" mode="aspectFit" style="height: 180px"/>
+  </view>
   <block wx:if="{{nr == 1}}">
     <view class="container">  
       <view class="msgs" wx:for="{{msgs}}">{{msgs[index]}} </view>
@@ -17,8 +19,8 @@
       <block wx:if="{{categories['厨余垃圾'] > 0}}">
         <button class="btn" type='primary' bindtap="gotoWet">厨余垃圾</button>
       </block>
-      <block wx:if="{{categories['可回收垃'] > 0}}">
-        <button class="btn" type='primary' bindtap="gotoRec">可回收垃</button>
+      <block wx:if="{{categories['可回收物'] > 0}}">
+        <button class="btn" type='primary' bindtap="gotoRec">可回收物</button>
       </block>
       <block wx:if="{{categories['有害垃圾'] > 0}}">
         <button class="btn" type='primary' bindtap="gotoHam">有害垃圾</button>

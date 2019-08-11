@@ -15,7 +15,9 @@
     </view>
   </view>
 用户 openid -->
-
+  <view>
+    <image class="person_icon" bindtap='jumpToPersonal' src="../../images/icon_personal.png"> </image>
+  </view>
   <!-- 上传图片 -->
   <view>
    <button class="uploadphoto-btn" bindtap="doUpload">

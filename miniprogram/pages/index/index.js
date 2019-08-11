@@ -161,6 +161,12 @@ Page({
     })
   },
 
+  jumpToPersonal: function () {
+    wx.navigateTo({
+      url: '../personal/personal',
+    })
+  },
+
   // 上传图片
   doUpload: function () {
     // 选择图片
