@@ -30,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 60rpx;
+  font-size: 50rpx;
   font-weight: bold;
   color: #555;
   line-height: 60rpx;
