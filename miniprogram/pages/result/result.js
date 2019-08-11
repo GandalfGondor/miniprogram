@@ -1,4 +1,6 @@
 // pages/result/result.js
+const app = getApp()
+
 Page({
 
   /**
@@ -15,15 +17,32 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    right_answer=options.right_answer-0;
     this.setData({
       A: options.right_answer - 0,
       B: options.wrong_answer - 0
-    })
-
+    }),
     this.setData({
       Kind: "您太棒了"
-    })
+    }),
+          
+            //gTotalScan:垃圾分类识别总数，gTotalScore：游戏累计分数，gMaxScore：单次游戏最大得分
+            //根据要求修改对应的gTotalScan、gTotalScore和gMaxScore。游戏修改gTotalScore和gMaxScore，垃圾分别识别修改gTotalScan
+            //app.globalData.gTotalScan = app.globalData.gTotalScan + 1
+            app.globalData.gTotalScore = app.globalData.gTotalScore + right_answer
+            app.globalData.gMaxScore = right_answer > app.globalData.gMaxScore?  right_answer : app.globalData.gMaxScore
+            console.log(app.globalData.id)
+            dbconn.collection("user").doc(app.globalData.id).update({
+              data: {
+                total_score: app.globalData.gTotalScore,
+                max_score: app.globalData.gMaxScore
+                //total_scan: app.globalData.gTotalScan
+              },
+              success: function (res) {
+                console.log(res)
+              }
+            })
+
   },
 
   /**
