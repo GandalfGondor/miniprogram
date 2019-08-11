@@ -18,6 +18,12 @@
           <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </view>
       </view>
+      <view style="height:65px;">
+        <view url="" class="weui-cell weui-cell_access2" hover-class="weui-cell_active" style="width:180px; height:50px; border-radius: 30px; display:flex; justify-content:center; align-items:center;background-color:#4B65F0" bindtap='goto_rankList'>
+          <text class="weui-cell__bd" style="color:white">游戏排行</text>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
     </view>
   </view>
   <view class='page__hd' style="height:90px; display:flex;justify-content:center; align-items:center;">

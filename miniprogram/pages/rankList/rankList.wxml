@@ -1,0 +1,79 @@
+<!--miniprogram/pages/rankList/rankList.wxml-->
+<view class="page__top" style="height:20px"></view>
+<view class="page" style="display:flex; justify-content:center; align-items:center;">
+<view class="weui-cells weui-cells_after-title">
+<view class="weui-cells weui-cells_after-title">
+<view class="weui-cells weui-cells_after-title" style="background-color: #E6E6E6;border-radius: 10px;">
+  <view class='page__hd' style="height:80px; display:flex; justify-content:center; align-items:center;">
+    <view class="page__title" style="width:120px;  display:flex; justify-content:center; align-items:center;color:white;background-color:#4B65F0;border-radius:20px 0px 0px 20px">{{rankListType}}</view>
+    <view class="page__title" style="width:140px;"></view>
+  </view>
+  <view class="page__bd" style="width:280px;background-color: #E6E6E6;border-radius: 10px;">
+    <view class="weui-cells weui-cells_after-title" style="width:200px; height:250px;border-radius: 10px;">
+    <view style="height:35px;">
+            <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active" style=" height:30px;">
+            <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
+                <view class="weui-cell__bd" style="width:20px;color:white">1</view>
+                <view class="weui-cell__bd" style="width:10px;"></view>
+                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top1}}</view>
+                <view class="weui-cell__bd" style="width:30px;"></view>
+                </view>
+            </view>
+            </view>
+<view style="height:35px;">
+            <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active" style=" height:30px;">
+            <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
+                <view class="weui-cell__bd" style="width:20px;color:white">2</view>
+                <view class="weui-cell__bd" style="width:10px;"></view>
+                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top2}}</view>
+                <view class="weui-cell__bd" style="width:30px;"></view>
+              </view>
+            </view>
+            </view>
+<view style="height:35px;">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" style="height:30px;">
+            <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
+                <view class="weui-cell__bd" style="width:20px;color:white">3</view>
+                <view class="weui-cell__bd" style="width:10px;"></view>
+                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top3}}</view>
+                <view class="weui-cell__bd" style="width:30px;"></view>
+              </view>
+            </view>
+            </view>
+            <view style="height:35px;">
+                        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" style=" height:30px;">
+                        <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
+                <view class="weui-cell__bd" style="width:20px;color:white">4</view>
+                <view class="weui-cell__bd" style="width:10px;"></view>
+                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top4}}</view>
+                <view class="weui-cell__bd" style="width:30px;"></view>
+              </view>
+            </view>
+            </view>
+            <view style="height:35px;">
+                        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" style="height:30px;">
+                        <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
+                <view class="weui-cell__bd" style="width:20px;color:white">5</view>
+                <view class="weui-cell__bd" style="width:10px;"></view>
+                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top5}}</view>
+                <view class="weui-cell__bd" style="width:30px;"></view>
+              </view>
+            </view>
+            </view>
+        </view>
+    
+  </view>
+  </view>
+  </view>
+  <view class='page__hd' style="height:20px; display:flex;justify-content:center; align-items:center;">
+      
+      <!-- <view class="page__title" style="font-size: 65rpx;display:flex; justify-content:center; align-items:center; color:white">得分：{{right_answer}}</view>
+     -->
+    </view>
+    </view>
+</view>
+<view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
+<view class="rankeListSpeed" bindtap="ChangeToSpeed" style="border-radius:20px 0px 0px 20px;display:flex;justify-content:center; align-items:center;width:130px;height:45px;font-size: 40rpx;color:white;background-color:#4B65F0;">竞速排行</view>
+<view class="between" style="width:5px; display:flex;justify-content:center; align-items:center;"></view>
+<view class="rankeListScore" bindtap="ChangeToScore" style="border-radius:0px 20px 20px 0px;display:flex;justify-content:center; align-items:center;width:130px;height:45px;font-size: 40rpx;color:white;background-color:#4B65F0;">答题排行</view>
+</view>

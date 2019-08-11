@@ -1,0 +1,4 @@
+/* miniprogram/pages/rankList/rankList.wxss */
+page {
+  background: #C3C0C0;
+}

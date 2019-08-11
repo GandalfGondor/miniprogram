@@ -25,7 +25,8 @@
     "pages/game1/game1",
     "pages/game2/game2",
     "pages/gamenavigation/gamenavigation",
-    "pages/result/result"
+    "pages/result/result",
+    "pages/rankList/rankList"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

@@ -12,5 +12,10 @@ Page({
     wx.navigateTo({
       url: '../game2/game2',
     })
+  },
+  goto_rankList: function (e) {
+    wx.navigateTo({
+      url: '../rankList/rankList',
+    })
   }
 })
