@@ -129,12 +129,12 @@ Page({
     }
     else if (this.data.itemCategory == "有害垃圾") {
       wx.navigateTo({
-        url: "pages/baike/harmful/harmful",
+        url: "/pages/baike/harmful/harmful",
       })
     }
     else if (this.data.itemCategory == "可回收物") {
       wx.navigateTo({
-        url: "pages/baike/recyclable/recyclable",
+        url: "/pages/baike/recyclable/recyclable",
       })
     }
   },
