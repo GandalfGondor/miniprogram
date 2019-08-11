@@ -82,13 +82,32 @@ Page({
       isg = '知识宝库中没有收录该物品，恭喜您发现了知识的荒原。'
       ms.push("物品未收录")
     }
+
     this.setData ({
       msgs : ms,
       categories: cates,
       nr : cnt,
       iconMsg : isg
     })
-    console.log(cnt)
+        /*已测试，更新total_scan、total_score、max_score */
+    //gTotalScan:垃圾分类识别总数，gTotalScore：游戏累计分数，gMaxScore：单次游戏最大得分
+    //根据要求修改对应的gTotalScan、gTotalScore和gMaxScore。游戏修改gTotalScore和gMaxScore，垃圾分别识别修改gTotalScan
+    var dbconn = wx.cloud.database()
+    app.globalData.gTotalScan = app.globalData.gTotalScan + 1
+    // app.globalData.gTotalScore = app.globalData.gTotalScore + game score
+    // app.globalData.gMaxScore = game score > app.globalData.gMaxScore?  game score : app.globalData.gMaxScore
+    console.log(app.globalData.id)
+    dbconn.collection("user").doc(app.globalData.id).update({
+      data: {
+        // total_score: app.globalData.gTotalScore,
+        // max_score: app.globalData.gMaxScore
+        total_scan: app.globalData.gTotalScan
+      },
+      success: function (res) {
+        console.log(res)
+      }
+    })
+   
   },
 
   analyzeImg: function (imgUrl) {
@@ -148,7 +167,7 @@ Page({
     })
   },
   gotoIndex: function () {
-    wx.switchTab({
+    wx.navigateTo({
       url: '../index/index',
     })
   }
