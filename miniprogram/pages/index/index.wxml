@@ -15,8 +15,12 @@
     </view>
   </view>
 用户 openid -->
+<!--
   <view>
     <image class="person_icon" bindtap='jumpToPersonal' src="../../images/icon_personal.png"> </image>
+  </view> -->
+  <view class="person_icon" bindtap='jumpToPersonal'>
+      <open-data  type="userAvatarUrl"></open-data>
   </view>
   <!-- 上传图片 -->
   <view>

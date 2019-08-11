@@ -45,12 +45,20 @@ Page({
       status = "已达成"
       img = param.currentTarget.dataset.img_done
     }
+    var text1 = ""
+    var text2 = ""
+    if (param.currentTarget.dataset.scanneed != 0) {
+      text1 = '扫垃圾数: ' + app.globalData.gTotalScan + '/' + param.currentTarget.dataset.scanneed
+    } 
+    if (param.currentTarget.dataset.scoreneed != 0) {
+      text2 = '游戏得分: ' + app.globalData.gTotalScore + '/' + param.currentTarget.dataset.scoreneed
+    }
     this.setData({
       modalHidden: false,
       window_title: param.currentTarget.dataset.name,
       achieve_status : status,
-      window_text1: '扫垃圾数: ' + app.globalData.gTotalScan + '/' + param.currentTarget.dataset.scanneed,
-      window_text2: '游戏得分: ' + app.globalData.gTotalScore + '/' + param.currentTarget.dataset.scoreneed,
+      window_text1: text1,
+      window_text2: text2,
       window_img: img
     })
   },
