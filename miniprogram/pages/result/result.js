@@ -18,6 +18,7 @@ Page({
    */
   onLoad: function (options) {
     var right_answer=options.right_answer-0;
+    right_answer=right_answer*10;
     this.setData({
       A: options.right_answer - 0,
       B: options.wrong_answer - 0
