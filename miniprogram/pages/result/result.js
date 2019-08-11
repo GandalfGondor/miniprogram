@@ -17,7 +17,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    right_answer=options.right_answer-0;
+    var right_answer=options.right_answer-0;
     this.setData({
       A: options.right_answer - 0,
       B: options.wrong_answer - 0
