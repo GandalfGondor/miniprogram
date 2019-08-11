@@ -1,10 +1,29 @@
 const app = getApp()
-
+  /* in app.json
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "images/icon_personal.png",
+        "selectedIconPath": "images/icon_personal.png",
+        "text": "Mine"
+      }
+    ]
+  },
+  */
 Page({
   /**
    * 页面的初始数据
    */
   data: {
+    modalHidden : true,
+    window_text1 : "hhhhh"
   },
 
   /**
@@ -20,11 +39,34 @@ Page({
   },
 
   onDetail: function(param) {
-    wx.showModal({
-      title: param.currentTarget.dataset.name,
-      content: '扫垃圾数: ' + param.currentTarget.dataset.scanneed + '\r\n游戏得分: ' + param.currentTarget.dataset.scoreneed,
+    var status = "未达成"
+    var img = param.currentTarget.dataset.img_todo;
+    if (app.globalData.gTotalScan >= param.currentTarget.dataset.scanneed && app.globalData.gTotalScore >= param.currentTarget.dataset.scoreneed) {
+      status = "已达成"
+      img = param.currentTarget.dataset.img_done
+    }
+    this.setData({
+      modalHidden: false,
+      window_title: param.currentTarget.dataset.name,
+      achieve_status : status,
+      window_text1: '扫垃圾数: ' + app.globalData.gTotalScan + '/' + param.currentTarget.dataset.scanneed,
+      window_text2: '游戏得分: ' + app.globalData.gTotalScore + '/' + param.currentTarget.dataset.scoreneed,
+      window_img: img
     })
-    console.log(param.currentTarget.dataset)
+  },
+
+  modalCandel: function () {
+    // do something
+    this.setData({
+      modalHidden: true
+    })
+  },
+
+  modalConfirm: function () {
+    // do something
+    this.setData({
+      modalHidden: true
+    })
   },
 
   /**
