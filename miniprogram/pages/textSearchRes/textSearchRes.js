@@ -102,12 +102,12 @@ Page({
     if (category == "其他垃圾" || category == "干垃圾") {
       iconUrl = '../../images/textRes_other.png'
       // itemCategory = "干垃圾"
-      iconMsg = '干垃圾指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物。投入干垃圾收集容器，并保持周边环境整洁。'
+      iconMsg = '其他垃圾指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物。投入其他垃圾（干垃圾）收集容器，并保持周边环境整洁。'
     }
     else if (category == "厨余垃圾" || category == "湿垃圾") {
       iconUrl = '../../images/textRes_wet.png'
       // itemCategory = "湿垃圾"
-      iconMsg = '湿垃圾即易腐垃圾，又称厨余垃圾，有机垃圾，指易腐烂的生活废弃物。'
+      iconMsg = '厨余垃圾又称湿垃圾、有机垃圾，指易腐烂的生活废弃物。'
     }
     else if (category == "有害垃圾") {
       iconUrl = '../../images/textRes_bad.png'
