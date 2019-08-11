@@ -31,7 +31,7 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#33CCFF",
+    "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "垃圾分类小程序",
     "navigationBarTextStyle": "black"
   },
