@@ -2,8 +2,14 @@
 <view class="container">
   <view class="guide">
     <text class="headline">科普定义</text>
-    <text class="p">厨余垃圾包括剩菜剩饭、骨头、菜根菜叶、果皮等食品类废物。</text>
-    <text class="headline">收集要求</text>
-    <text class="p">经生物技术就地处理堆肥，每吨可生产0.6~0.7吨有机肥料。</text>
+    <text class="p">厨余垃圾即易腐垃圾，易腐烂的生活废弃物。</text>
+    <text class="headline">常见包括</text>
+    <text class="p">食材废料：谷物、肉蛋及其加工食品、水产及其加工食品、蔬菜、调料、酱料等。</text>
+    <text class="p">剩菜剩饭：火锅汤底、鱼骨、碎骨、茶叶渣、咖啡渣、中药药渣等。</text>
+    <text class="p">过期食品：糕饼、糖果、风干食品、粉末类食品、宠物饲料等。</text>
+    <text class="p">瓜皮果核：水果果肉、水果果皮、水果茎枝、果实等。</text>
+    <text class="p">花卉绿植：家养绿植、花卉、花瓣、枝叶等。</text>
+    <text class="headline">处理方法</text>
+    <text class="p">厨余垃圾应从产生时就与其他品种垃圾分开收集。投放前尽量沥干水分，有外包装的应去除包装投放，有专人负责收集处理进行综合利用，如作有机肥料、燃料油、酒精等等。</text>
   </view>
 </view>

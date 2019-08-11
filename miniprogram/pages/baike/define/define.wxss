@@ -1,2 +1,16 @@
 /* pages/baike/define/define.wxss */
 @import "../../../style/guide.wxss";
+.guide .headline {
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #555;
+  line-height: 80rpx;
+}
+
+.guide .p {
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  line-height: 50rpx;
+  color: #666;
+  text-align: justify;
+}

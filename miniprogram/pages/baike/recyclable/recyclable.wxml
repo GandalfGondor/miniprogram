@@ -2,7 +2,11 @@
 <view class="container">
   <view class="guide">
     <text class="headline">科普定义</text>
-    <text class="p">可回收物主要包括废纸、塑料、玻璃、金属和布料五大类。</text>
+    <text class="p">可回收物就是可以再生循环利用的垃圾，主要包括废纸、塑料、玻璃、金属和布料五大类。</text>
+    <text class="headline">常见包括</text>
+    <text class="p">报纸、纸箱、书本、纸塑铝复合包装、纸袋、信封、塑料瓶、玩具、食品保鲜盒、乳液罐、衣架、泡沫塑料、酒瓶、玻璃杯、碎玻璃、窗玻璃、易拉罐、锅、螺丝刀、废织物、插板、电路板等。</text>
+    <text class="headline">处理方法</text>
+    <text class="p">投放可回收物时，应尽量保持清洁干燥，避免污染；立体包装应清空内容物，清洁后压扁投放；易破损或有裹尖锐边角的应包后投放。可回收垃圾通过综合处理回收利用，可以减少污染，节省资源。</text>
   </view>
 </view>
 

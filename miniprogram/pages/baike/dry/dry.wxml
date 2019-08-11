@@ -2,9 +2,11 @@
 <view class="container">
   <view class="guide">
     <text class="headline">科普定义</text>
-    <text class="p">其它垃圾包括除上述几类垃圾之外的砖瓦陶瓷、渣土、卫生间废纸、纸巾等难以回收的废弃物及果壳、尘土、食品袋（盒）。</text>
-    <text class="headline">收集要求</text>
-    <text class="p">采取卫生填埋可有效减少对地下水、地表水、土壤及空气的污染，还无有效化解其他垃圾的好方法，所以需尽量少产生这类垃圾。</text>
+    <text class="p">其他垃圾指除可回收物、有害垃圾、厨余垃圾（湿垃圾）以外的其它生活废弃物。</text>
+    <text class="headline">常见包括</text>
+    <text class="p">餐巾纸、卫生间用纸、尿不湿、狗尿垫、猫砂、烟蒂、干燥剂、污损塑料、尼龙制品、编织袋、防碎气泡膜、大骨头、硬贝壳、毛发、灰土、橡皮泥、陶瓷制品、竹制品、成分复杂的制品等。</text>
+    <text class="headline">处理方法</text>
+    <text class="p">投入其他垃圾收集容器，并保持周边环境整洁。采取卫生填埋可有效减少对环境的污染，目前还无有效化解其他垃圾的好方法，所以需尽量少产生这类垃圾。</text>
   </view>
 </view>
 

@@ -2,18 +2,18 @@
 @import "../../style/guide.wxss";
 
 .Dry{
-  width: 250rpx;
-  height: 250rpx;
+  width: 280rpx;
+  height: 280rpx;
   padding:0 20rpx;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  background-size: 250rpx 250rpx;
+  background-size: 280rpx 280rpx;
   background-repeat:no-repeat;
   border:none;
   margin-top: 615rpx;
-  right: 80rpx;
+  right: 70rpx;
   color: rgb(14, 0, 0);
   font-size: 80rpx;
   border-radius: 0rpx;
