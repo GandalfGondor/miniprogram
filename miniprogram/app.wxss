@@ -29,7 +29,7 @@ button::after{
   background-size: 200rpx 300rpx;
   background-repeat:no-repeat;
   border:none;
-  margin-top: 620rpx;
+  margin-top: 700rpx;
   right: 140rpx;
   color: rgb(14, 0, 0);
   font-size: 80rpx;
@@ -51,7 +51,7 @@ button::after{
   background-size: 200rpx 300rpx;
   background-repeat:no-repeat;
   border:none;
-  margin-top: 620rpx;
+  margin-top: 700rpx;
   left: 140rpx;
   color: rgb(14, 0, 0);
   font-size: 80rpx;
