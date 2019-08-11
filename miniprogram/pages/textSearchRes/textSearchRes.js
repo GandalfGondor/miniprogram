@@ -31,6 +31,23 @@ Page({
     console.log(tags);
 
     this.getCategory();
+
+    //已测试，更新total_scan、total_score、max_score
+    //gTotalScan:垃圾分类识别总数，gTotalScore：游戏累计分数，gMaxScore：单次游戏最大得分
+    //根据要求修改对应的gTotalScan、gTotalScore和gMaxScore。游戏修改gTotalScore和gMaxScore，垃圾分别识别修改gTotalScan
+    var dbconn = wx.cloud.database()
+    app.globalData.gTotalScan = app.globalData.gTotalScan + 1
+    console.log(app.globalData.id)
+    dbconn.collection("user").doc(app.globalData.id).update({
+      data: {
+        total_scan: app.globalData.gTotalScan
+      },
+      success: function (res) {
+        console.log(res)
+      }
+    })
+            
+
     this.setData({
       query: options.query,
       hasQuery: true
