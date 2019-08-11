@@ -135,6 +135,7 @@ function wxSearchKeyTap(e, that, callBack) {
     if (typeof (callBack) == "function") {
         callBack();
     }
+  wxSearchAddHisKey(that)
 }
 function getHisKeys(that) {
     var value = [];

@@ -31,7 +31,6 @@ Page({
     console.log(tags);
 
     this.getCategory();
-
     this.setData({
       query: options.query,
       hasQuery: true

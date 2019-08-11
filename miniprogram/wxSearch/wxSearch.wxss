@@ -1,7 +1,7 @@
 .wxSearch{ 
   position:absolute; 
   margin-top:370rpx; 
-  left: 0px; 
+  left: 0rpx; 
   width: 100%; 
 } 
 .wxSearchInner{ 
@@ -37,11 +37,11 @@
 } 
 .wxSearch-input{ 
   flex: 8;  
-  background-color: rgb(231, 228, 228); 
+  background-color: rgb(255, 255, 255); 
   width: 400rpx; 
   height: 100rpx; 
   padding-left: 50rpx; 
-  border:3rpx solid rgb(206, 206, 206); 
+  border-right:3rpx solid rgb(206, 206, 206); 
 } 
 .wxSearch-button{ 
   flex: 1; 
