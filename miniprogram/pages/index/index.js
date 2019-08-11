@@ -21,7 +21,7 @@ Page({
       return
     }
     var that = this
-    WxSearch.init(that, 43, ['水瓶', '香蕉皮', '米饭', '车胎','电池']);
+    WxSearch.init(that, 43, ['筷子', '指甲油', '啤酒', '苹果','眼影']);
 
     // 获取用户信息
     wx.getSetting({
