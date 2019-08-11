@@ -162,10 +162,10 @@ page {
 .person_icon {
   position: absolute;
   overflow:hidden;
-  width: 95rpx;
-  height: 100rpx;
-  margin-left : 105px;
-  margin-right : 30px;
+  width: 96rpx;
+  height: 96rpx;
+  margin-left : 110px;
+  margin-right : 20px;
   margin-top: 50rpx;
   border-radius: 50%;
   border: 1px solid rgb(255, 255, 255);

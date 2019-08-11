@@ -14,16 +14,16 @@
     </view>
     <view class="goto" >
       <block wx:if="{{categories['其他垃圾'] > 0}}">
-        <button class="btn" type='primary' bindtap="gotoDry">其他垃圾</button>
+        <button class="btn"  bindtap="gotoDry">其他垃圾</button>
       </block>
       <block wx:if="{{categories['厨余垃圾'] > 0}}">
-        <button class="btn" type='primary' bindtap="gotoWet">厨余垃圾</button>
+        <button class="btn"  bindtap="gotoWet">厨余垃圾</button>
       </block>
       <block wx:if="{{categories['可回收物'] > 0}}">
-        <button class="btn" type='primary' bindtap="gotoRec">可回收物</button>
+        <button class="btn"  bindtap="gotoRec">可回收物</button>
       </block>
       <block wx:if="{{categories['有害垃圾'] > 0}}">
-        <button class="btn" type='primary' bindtap="gotoHam">有害垃圾</button>
+        <button class="btn"  bindtap="gotoHam">有害垃圾</button>
       </block>
     </view>
   </block>
@@ -33,8 +33,8 @@
         <view class="weui-article__p" class="iconMsg">{{iconMsg}}</view>
     </view>
     <view class="goto">  
-        <button class="btn" type='primary' bindtap="gotoBaike">查看百科</button>
-        <button class="btn" type='primary' bindtap="gotoIndex">返回首页</button>
+        <button class="btn" bindtap="gotoBaike">查看百科</button>
+        <button class="btn" bindtap="gotoIndex">返回首页</button>
      </view>
   </block>
 </view>

@@ -48,11 +48,10 @@
     font-size: 36rpx;
 }
 
-
 .icon_view {
   width: 80rpx;
   height: 80rpx;
-  border-radius: 80%;
+  border-radius: 100%;
 }
 
 .aweui-grids{

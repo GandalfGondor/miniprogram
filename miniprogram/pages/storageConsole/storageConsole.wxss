@@ -24,7 +24,12 @@ page{
   justify-content:center;
   align-items:center;
 }
-
+.btn{
+  background-color:#8a8a8a;
+  color: cornsilk;
+  font-size: 30rpx;  
+  margin: 50rpx 20rpx
+}
 .msgs{
   display:flex;
   justify-content:center;

@@ -97,9 +97,9 @@ Page({
       // itemCategory = "有害垃圾"
       iconMsg = '有害垃圾指对人体健康或者自然环境造成直接或者潜在危害的生活废弃物，含有有害重金属或有毒物质，常见包括废电池、废荧光灯管、废灯泡、废水银温度计等等。'
     }
-    else if (category == "可回收垃圾") {
+    else if (category == "可回收物") {
       iconUrl = '../../images/textRes_recycle.png'
-      // itemCategory = "可回收垃圾"
+      // itemCategory = "可回收物"
       iconMsg = '可回收物就是可以再生循环利用的垃圾，主要包括废纸、塑料、玻璃、金属和布料五大类。'
     }
     else {
@@ -132,7 +132,7 @@ Page({
         url: "pages/baike/harmful/harmful",
       })
     }
-    else if (this.data.itemCategory == "可回收垃圾") {
+    else if (this.data.itemCategory == "可回收物") {
       wx.navigateTo({
         url: "pages/baike/recyclable/recyclable",
       })
@@ -140,7 +140,7 @@ Page({
   },
 
   jumpToHome: function(){
-    wx.switchTab({
+    wx.navigateTo({
       url: '/pages/index/index',
     })
   },

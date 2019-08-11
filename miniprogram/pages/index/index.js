@@ -54,6 +54,7 @@ Page({
     })
 
     /*个人中心 begin*/
+    const dbconn = wx.cloud.database()
     wx.cloud.callFunction({
       name: 'login',
       data: {},
@@ -87,6 +88,7 @@ Page({
             /*已测试，更新total_scan、total_score、max_score
             //gTotalScan:垃圾分类识别总数，gTotalScore：游戏累计分数，gMaxScore：单次游戏最大得分
             //根据要求修改对应的gTotalScan、gTotalScore和gMaxScore。游戏修改gTotalScore和gMaxScore，垃圾分别识别修改gTotalScan
+            var dbconn = wx.cloud.database()
             //app.globalData.gTotalScan = app.globalData.gTotalScan + 1
             app.globalData.gTotalScore = app.globalData.gTotalScore + game score
             app.globalData.gMaxScore = game score > app.globalData.gMaxScore?  game score : app.globalData.gMaxScore
@@ -109,7 +111,6 @@ Page({
         console.error('[云函数] [login] 调用失败', err)
       }
     })
-    const dbconn = wx.cloud.database()
     dbconn.collection("AchieveItem").get({
       success: function (res) {
         app.globalData.achieve_list = res.data
