@@ -40,18 +40,21 @@ Page({
       }
     })
     
-    // 获取服务器中的json文件
-    wx.request({
-      url: 'https://6d69-miniprog-ttsrs-1259681489.tcb.qcloud.la/rubbish_items.json?sign=6a8b4d82b40adac7fa288abfad4cf836&t=1564823960',
-      header: {
-        'content-type': 'application/json'
-      },
-      success: function (res) {
-        var app = getApp()
-        app.globalData.rubbish_table = res.data
-      }
+    // // 获取服务器中的json文件
+    // wx.request({
+    //   url: 'https://6d69-miniprog-ttsrs-1259681489.tcb.qcloud.la/rubbish_items.json?sign=6a8b4d82b40adac7fa288abfad4cf836&t=1564823960',
+    //   header: {
+    //     'content-type': 'application/json'
+    //   },
+    //   success: function (res) {
+    //     var app = getApp()
+    //     app.globalData.rubbish_table = res.data
+    //   }
 
-    })
+    // })
+
+    var jsonDb = require("../data/data.js")
+    app.globalData.rubbish_table = jsonDb.itemJson
 
     /*个人中心 begin*/
     const dbconn = wx.cloud.database()
