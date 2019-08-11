@@ -1,5 +1,7 @@
 <view class='page' >
-  <image class="img" src="{{imagePath}}" mode="aspectFit" style="height: 180px"/>
+  <view class="preview">
+    <image class="img" src="{{imagePath}}" mode="aspectFit" style="height: 180px"/>
+  </view>
   <block wx:if="{{nr == 1}}">
     <view class="container">  
       <view class="msgs" wx:for="{{msgs}}">{{msgs[index]}} </view>
