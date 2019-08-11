@@ -113,10 +113,10 @@
   color:#5f5f5f;
 } 
 .wxSearchDeleteAllBtn{ 
-  position:relative;
-  top: 5rpx;
+  position:absolute;
+  top: 10rpx;
   height: 50rpx; 
-  left:230rpx;
+  left:480rpx;
   line-height: 50rpx; 
   width:220rpx;
   text-align: center;
