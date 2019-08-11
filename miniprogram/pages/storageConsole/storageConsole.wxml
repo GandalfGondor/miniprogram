@@ -5,7 +5,7 @@
   <block wx:if="{{nr == 1}}">
     <view class="container">  
       <view class="msgs" wx:for="{{msgs}}">{{msgs[index]}} </view>
-      <view class="weui-article__p" class="iconMsg">{{iconMsg}}</view>
+      <view class="iconMsg">{{iconMsg}}</view>
       </view>
   </block>
   <block wx:if="{{nr > 1}}"> 
@@ -30,7 +30,7 @@
    <block wx:if="{{nr == 0}}">
     <view class="container">  
         <view class="msgs" wx:for="{{msgs}}">{{msgs[index]}} </view>
-        <view class="weui-article__p" class="iconMsg">{{iconMsg}}</view>
+        <view class="iconMsg">{{iconMsg}}</view>
     </view>
     <view class="goto">  
         <button class="btn" bindtap="gotoBaike">查看百科</button>

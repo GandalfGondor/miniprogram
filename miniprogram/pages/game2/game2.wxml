@@ -34,7 +34,7 @@
   </view>
     <view class='page__hd' style="height:90px; display:flex;justify-content:center; align-items:center;">
       
-      <view class="page__title" style="font-size: 65rpx;display:flex; justify-content:center; align-items:center;color:white">得分：{{right_answer}}</view>
+      <view class="page__title" style="font-size: 65rpx;display:flex; justify-content:center; align-items:center;color:white">得分：{{right_answer*10}}</view>
       </view>
     <view class="left_time" style="display:flex; justify-content:center; align-items:center;font-size: 70rpx;color:white">倒计时：{{countDowntime}} S</view>
     
