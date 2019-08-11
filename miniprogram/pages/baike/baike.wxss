@@ -12,8 +12,8 @@
   background-size: 250rpx 250rpx;
   background-repeat:no-repeat;
   border:none;
-  margin-top: 610rpx;
-  right: 95rpx;
+  margin-top: 615rpx;
+  right: 80rpx;
   color: rgb(14, 0, 0);
   font-size: 80rpx;
   border-radius: 0rpx;
@@ -25,18 +25,18 @@
 }
 
 .Wet{
-  width: 232rpx;
-  height: 295rpx;
+  width: 236rpx;
+  height: 300rpx;
   padding:0 20rpx;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  background-size: 232rpx 295rpx;
+  background-size: 236rpx 300rpx;
   background-repeat:no-repeat;
   border:none;
-  margin-top: 548rpx;
-  left: 148rpx;
+  margin-top: 547rpx;
+  left: 144rpx;
   color: rgb(14, 0, 0);
   font-size: 80rpx;
   border-radius: 0rpx;
@@ -48,18 +48,18 @@
 }
 
 .Recyclable{
-  width: 250rpx;
+  width: 262rpx;
   height: 252rpx;
   padding:0 20rpx;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  background-size: 250rpx 252rpx;
+  background-size: 262rpx 252rpx;
   background-repeat:no-repeat;
   border:none;
   margin-top: 360rpx;
-  left: 155rpx;
+  left: 150rpx;
   color: rgb(14, 0, 0);
   font-size: 80rpx;
   border-radius: 0rpx;
@@ -71,18 +71,18 @@
 }
 
 .Harmful{
-  width: 270rpx;
+  width: 281rpx;
   height: 310rpx;
   padding:0 20rpx;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  background-size: 270rpx 310rpx;
+  background-size: 281rpx 310rpx;
   background-repeat:no-repeat;
   border:none;
   margin-top: 360rpx;
-  right: 92rpx;
+  right: 75rpx;
   color: rgb(14, 0, 0);
   font-size: 80rpx;
   border-radius: 0rpx;
@@ -100,7 +100,7 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  background-size: 250rpx 100rpx;
+  background-size: 400rpx 130rpx;
   background-repeat:no-repeat;
   border:none;
   margin-top: 950rpx;
@@ -121,7 +121,7 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  background-size: 250rpx 100rpx;
+  background-size: 230rpx 230rpx;
   background-repeat:no-repeat;
   border:none;
   margin-top: 100rpx;
