@@ -12,8 +12,13 @@
                   {{iconMsg}} 
             </view>
             <view wx:if="{{findItem}}" class="btnPos">
-              <button class="dictBtn weui-btn mini-btn" bindtap="jumpToBaike" size="mini">{{itemCategory}}处理方法/{{itemCategory}}一览</button>
+              <button class="dictBtn weui-btn mini-btn" bindtap="jumpToBaikeDetail" size="mini">{{itemCategory}}处理方法/{{itemCategory}}一览</button>
             </view>
+            <view wx:if="{{!findItem}}" class="button-sp-area btnPos">
+              <button class="dictBtn weui-btn mini-btn" bindtap="jumpToHome" size="mini">返回首页</button>
+              <button class="dictBtn weui-btn mini-btn" bindtap="jumpToBaike" size="mini">查看百科</button>
+            </view>
+
           </view>
         </view>
     </view>

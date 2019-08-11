@@ -22,7 +22,7 @@
   background-color:#8a8a8a;
   color: cornsilk;
   font-size: 30rpx;  
-  margin: 50rpx 0
+  margin: 50rpx 20rpx
 }
 
 .btnPos{

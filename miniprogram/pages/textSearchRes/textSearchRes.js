@@ -19,7 +19,7 @@ Page({
     // iconUrl: '../../images/textRes_bad.png'
     // iconUrl: '../../images/图片4.png'
     // iconUrl: '../../images/textRes_bad1.ico'
-    iconUrl: '../../images/textRes_nores.png'
+    iconUrl: '../../images/404.png'
   },
 
   /**
@@ -64,12 +64,17 @@ Page({
     }
 
     if (0 == found) {
-      msg = "AI未识别哦，换个角度呗：）"
+      msg = "物品未收录"
+      this.setData({
+        itemCategoryMsg: msg,
+        iconMsg:"库中没有收录该物品，恭喜您发现了知识的荒原"
+      })
     }
-
-    this.setData({
-      itemCategoryMsg: msg
-    })
+    else{
+      this.setData({
+        itemCategoryMsg: msg
+      })
+    }
 
   },
 
@@ -111,7 +116,7 @@ Page({
     })
   },
 
-  jumpToBaike: function(){
+  jumpToBaikeDetail: function(){
     if (this.data.itemCategory == "其他垃圾" || this.data.itemCategory == "干垃圾") {
       wx.navigateTo({
         url: "/pages/baike/dry/dry",
@@ -133,6 +138,19 @@ Page({
         url: "pages/baike/recyclable/recyclable",
       })
     }
+  },
+
+  jumpToHome: function(){
+    wx.switchTab({
+      url: '/pages/index/index',
+    })
+  },
+
+  jumpToBaike: function(){
+    wx.navigateTo({
+      url: "/pages/baike/baike",
+    })
   }
+
 
 })
