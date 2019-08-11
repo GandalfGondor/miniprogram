@@ -106,7 +106,7 @@ page {
 
 .uploadphoto-btn {
   position:flex;
-  top: 80rpx;
+  top: 150rpx;
   margin-top:0rpx;
   width: 200rpx;
   height: 200rpx;

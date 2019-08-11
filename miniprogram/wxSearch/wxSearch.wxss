@@ -1,6 +1,6 @@
 .wxSearch{ 
   position:absolute; 
-  margin-top:370rpx; 
+  margin-top:430rpx; 
   left: 0rpx; 
   width: 100%; 
 } 
@@ -26,7 +26,7 @@
 } 
 .wxSearch-section{ 
   position:relative; 
-  top:100rpx; 
+  top:170rpx; 
   background-color: rgb(255, 255, 255); 
   height: 102rpx; 
   width: 700rpx;  
