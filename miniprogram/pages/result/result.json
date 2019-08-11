@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "游戏得分",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "white"
 }
