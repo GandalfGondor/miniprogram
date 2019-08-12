@@ -15,8 +15,8 @@
               <button class="dictBtn weui-btn" bindtap="jumpToBaikeDetail">查看"{{itemCategory}}"的百科</button>
             </view>
             <view wx:if="{{!findItem}}" class="button-sp-area btnPos">
-              <button class="dictBtn weui-btn mini-btn" bindtap="jumpToHome">返回首页</button>
-              <button class="dictBtn weui-btn mini-btn" bindtap="jumpToBaike">查看百科</button>
+              <button class="dictBtn" bindtap="jumpToHome">返回首页</button>
+              <button class="dictBtn" bindtap="jumpToBaike">查看百科</button>
             </view>
 
           </view>

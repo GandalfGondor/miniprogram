@@ -25,10 +25,10 @@ page{
   align-items:center;
 }
 .btn{
-  background-color:#8a8a8a;
-  color: cornsilk;
-  font-size: 30rpx;  
-  margin: 50rpx 20rpx
+  background-color:#BFBFBF;
+  color: white;
+  font-size: 40rpx;  
+  margin: 50rpx 50rpx
 }
 .msgs{
   display:flex;
