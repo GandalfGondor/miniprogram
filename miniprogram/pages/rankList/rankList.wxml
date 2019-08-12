@@ -15,7 +15,7 @@
             <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
                 <view class="weui-cell__bd" style="width:20px;color:white">1</view>
                 <view class="weui-cell__bd" style="width:10px;"></view>
-                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top1}}</view>
+                <view class="weui-cell__bd" style="width:130px;color:#8E8B8B">{{top1}}</view>
                 <view class="weui-cell__bd" style="width:30px;"></view>
                 </view>
             </view>
@@ -25,7 +25,7 @@
             <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
                 <view class="weui-cell__bd" style="width:20px;color:white">2</view>
                 <view class="weui-cell__bd" style="width:10px;"></view>
-                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top2}}</view>
+                <view class="weui-cell__bd" style="width:130px;color:#8E8B8B">{{top2}}</view>
                 <view class="weui-cell__bd" style="width:30px;"></view>
               </view>
             </view>
@@ -35,7 +35,7 @@
             <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
                 <view class="weui-cell__bd" style="width:20px;color:white">3</view>
                 <view class="weui-cell__bd" style="width:10px;"></view>
-                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top3}}</view>
+                <view class="weui-cell__bd" style="width:130px;color:#8E8B8B">{{top3}}</view>
                 <view class="weui-cell__bd" style="width:30px;"></view>
               </view>
             </view>
@@ -45,7 +45,7 @@
                         <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
                 <view class="weui-cell__bd" style="width:20px;color:white">4</view>
                 <view class="weui-cell__bd" style="width:10px;"></view>
-                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top4}}</view>
+                <view class="weui-cell__bd" style="width:130px;color:#8E8B8B">{{top4}}</view>
                 <view class="weui-cell__bd" style="width:30px;"></view>
               </view>
             </view>
@@ -55,7 +55,7 @@
                         <view class='page__hd' style=" display:flex;justify-content:center; align-items:center;">
                 <view class="weui-cell__bd" style="width:20px;color:white">5</view>
                 <view class="weui-cell__bd" style="width:10px;"></view>
-                <view class="weui-cell__bd" style="width:100px;color:#8E8B8B">{{top5}}</view>
+                <view class="weui-cell__bd" style="width:130px;color:#8E8B8B">{{top5}}</view>
                 <view class="weui-cell__bd" style="width:30px;"></view>
               </view>
             </view>
